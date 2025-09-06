@@ -1,0 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ComingSoon from "./Pages/ComingSoon";
+import Career from "./Career";
+import Press from "./Press";
+//import Colorownspray from "./Colorownspray"; // ✅ Import your Colorownspray component
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+       
+
+        {/* Coming Soon page */}
+        <Route path="/" element={<ComingSoon />} />
+
+        {/* Careers page */}
+        <Route path="/career" element={<Career />} />
+
+        {/* Press & Media page */}
+        <Route path="/press" element={<Press />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
