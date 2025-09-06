@@ -77,3 +77,65 @@
 .trail-btn:hover {
   background: #f0f0f0;
 }
+
+
+
+
+
+.features-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  background: #000; /* black background like screenshot */
+  color: #fff;
+  min-height: 100vh;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  max-width: 500px;
+}
+.feature-box {
+  width: 266px;
+  height: 183px;
+    
+  top: 179px;
+  left: 139px;
+
+  opacity: 1;
+  border: 1px solid rgba(255,255,255,0.2); /* thin border */
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 20px 30px;
+  background: rgba(255,255,255,0.05); /* subtle background */
+  color: #fff;
+}
+
+
+.feature-box h3 {
+  color: #00aaff; /* highlight color */
+  margin-bottom: 10px;
+}
+
+.features-drone img {
+  width: 450px;
+  max-width: 100%;
+}
+
+
+.section-three-img {
+  max-width: 100%;        /* ✅ prevents overflow */
+  width: 100%;            /* ✅ scales down with container */
+  height: auto;           /* keeps proportions */
+    /* optional rounded corners */
+  display: block;
+  margin: 0 auto;
+}
+
