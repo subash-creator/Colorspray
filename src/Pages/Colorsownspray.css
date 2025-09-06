@@ -1,0 +1,79 @@
+.colorownspray-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+    background: #000;
+}
+
+.hero-section {
+  position: relative;
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scaleX(-1)
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  transform: scaleX(-1)
+}
+
+.hero-logo {
+  width: 600px;
+ margin-bottom: -20px;
+ margin-top: 35px;
+ margin-left: -30px;
+}
+
+.hero-subtitle {
+  font-size: 1.8rem;
+   margin-bottom: -40px;
+    margin-left: -60px;
+    font-family: 'Poppins', sans-serif;
+  font-weight: 500;      /* Medium weight */
+  font-size: 32px;
+  line-height: 100%;     /* same as font-size → tight line spacing */
+  letter-spacing: 0;     /* no extra spacing */
+}
+
+.hero-drone {
+  width: 570px;
+  margin-left: 100px;
+  display: block;
+   z-index: 1;
+}
+
+.trail-btn {
+  position: absolute;
+  bottom: 50px;   /* adjust this value to move it higher */
+  left: 48%;
+  transform: translateX(-48%);
+  width: 250px;
+  height: 47px;
+  font-size: 1rem;
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  z-index: 3;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;      /* Medium weight */
+
+}
+
+.trail-btn:hover {
+  background: #f0f0f0;
+}
