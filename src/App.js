@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ComingSoon from "./Pages/ComingSoon";
-import Career from "./Career";
-import Press from "./Press";
+import Career from "./Pages/Career";
+import Press from "./Pages/Press";
 //import Colorownspray from "./Colorownspray"; // ✅ Import your Colorownspray component
 
 function App() {
