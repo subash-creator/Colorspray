@@ -86,10 +86,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 10%;
-  background: #000; /* black background like screenshot */
+  padding: 80px 7%;
+  background: radial-gradient(
+    circle at bottom left,         /* 👈 glow at bottom-left */
+    rgba(128,128,128,0.4) 0%,      /* soft gray center */
+    rgba(0,0,0,0.9) 60%,           /* transition */
+    rgba(0,0,0,1) 100%             /* full black */
+  );
   color: #fff;
   min-height: 100vh;
+  gap: 90px;
 }
 
 .features-grid {
@@ -97,6 +103,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   max-width: 500px;
+  
 }
 .feature-box {
   width: 266px;
@@ -107,35 +114,84 @@
 
   opacity: 1;
   border: 1px solid rgba(255,255,255,0.2); /* thin border */
-  border-radius: 10px;
+  
 
   display: flex;
   flex-direction: column;
   gap: 10px;
 
-  padding: 20px 30px;
+  padding: 10px 30px;
   background: rgba(255,255,255,0.05); /* subtle background */
   color: #fff;
 }
 
+.feature-box p {
+  font-weight: 400;      /* normal */
+  font-size: 15px;
+ margin-top: 0px;
+}
 
 .feature-box h3 {
-  color: #00aaff; /* highlight color */
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;      /* bold */
+  font-style: normal;    /* "Bold" is set by font-weight */
+  font-size: 24px;
+  margin-bottom: 2px;
+  
 }
 
-.features-drone img {
-  width: 450px;
-  max-width: 100%;
-}
+
 
 
 .section-three-img {
-  max-width: 100%;        /* ✅ prevents overflow */
-  width: 100%;            /* ✅ scales down with container */
-  height: auto;           /* keeps proportions */
-    /* optional rounded corners */
+  max-width: 100%;      
+  width: 100%;            
+  height: auto;         
   display: block;
   margin: 0 auto;
 }
 
+.features-drone {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.features-drone .drone-img {
+  position: relative;
+  z-index: 3;
+  width: 630px; 
+  height: auto;
+  margin-top: 30px;
+ transform: translateX(18px);  
+}
+
+.features-drone .outer-circle {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, rgba(109, 109, 109, 0.5) 0%, #000 100%);
+  opacity: 0.7;
+  z-index: 1;
+  margin-left: 130px;
+  display: block;
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 80px), black calc(100% - 80px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 80px), black calc(100% - 80px));
+}
+
+.features-drone .inner-circle {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  background: linear-gradient(0deg, rgba(109, 109, 109, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
+  opacity: 0.7;
+  z-index: 2;
+ margin-left: 130px;
+ display: block;
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 24px), black calc(100% - 24px));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 24px), black calc(100% - 24px));
+}

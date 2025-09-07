@@ -51,9 +51,13 @@ export default function Colorsownspray() {
                         <p>High-performance drone delivering rapid, consistent results.</p>
                     </div>
                 </div>
-                <div className="features-drone">
-                    <img src="/Drone1.png" alt="Drone Feature" />
-                </div>
+               
+                    <div className="features-drone">
+                        <div className="outer-circle"></div>
+                        <div className="inner-circle"></div>
+                        <img src="/Drone1.png" alt="Drone Feature" className="drone-img" />
+                    </div>
+
             </section>
 
             {/* Section 3 */}
