@@ -5,16 +5,15 @@
   background: #000;
 }
 
+/* HERO SECTION */
 .hero-section {
   position: relative;
   height: 92vh;
-  background-size: cover;
-  background-position: center;
-   background: url("../assets/section1bg.jpg") center/cover no-repeat;
+  background: url("../assets/section1bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scaleX(-1)
+  transform: scaleX(-1);
 }
 
 .overlay {
@@ -28,45 +27,45 @@
   z-index: 2;
   text-align: center;
   color: #fff;
-  transform: scaleX(-1)
+  transform: scaleX(-1);
 }
 
 .hero-logo {
-  width: 600px;
-  margin-bottom: -20px;
-  margin-top: 35px;
-  margin-left: -30px;
+  max-width: 40vw;   /* scalable */
+  width: 100%;
+  transform: translateY(10vh);
 }
 
 .hero-subtitle {
-  margin-bottom: -40px;
-  margin-left: -60px;
+  transform: translateY(6vh);
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: 32px;
-  line-height: 100%;
+  font-size: clamp(1.2rem, 2vw, 2rem); /* responsive */
+  line-height: 1.2;
   letter-spacing: 0;
+  
 }
 
 .hero-drone {
-  width: 570px;
-  margin-left: 100px;
+  max-width: 38vw;
+  width: 100%;
   display: block;
   z-index: 1;
+  transform: translate(8vh ,-3.5vh);
 }
 
 .trail-btn {
   position: absolute;
-  bottom: 50px;
+  bottom: 10vh;
   left: 48%;
-  transform: translateX(-48%);
-  width: 250px;
-  height: 47px;
+  transform: translateX(-50%);
+  width: clamp(180px, 20vw, 250px);
+  height: 3rem;
   font-size: 1rem;
   background: #fff;
   color: #000;
   border: none;
-  border-radius: 6px;
+  border-radius: 0.5rem;
   cursor: pointer;
   z-index: 3;
   font-family: 'Poppins', sans-serif;
@@ -77,108 +76,108 @@
   background: #f0f0f0;
 }
 
+/* FEATURES SECTION */
 
 .features-section {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 80px 7%;
-  background: radial-gradient(circle at bottom left,
-      rgba(128, 128, 128, 0.4) 0%,
-      rgba(0, 0, 0, 0.9) 60%, 
-      rgba(0, 0, 0, 1) 100%
-    );
+  padding: 8vh 7%;
+  background: radial-gradient(
+    circle at bottom left,
+    rgba(128, 128, 128, 0.4) 0%,
+    rgba(0, 0, 0, 0.9) 60%, 
+    rgba(0, 0, 0, 1) 100%
+  );
   color: #fff;
   min-height: 100vh;
-  gap: 90px;
+  gap: 5vw;
+  flex-wrap: nowrap;
 }
 
 .features-grid {
+  flex: 1;  /* take left side */
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 500px;
-
+  gap: 2rem;
 }
 
+
 .feature-box {
-  width: 266px;
-  height: 183px;
-  top: 179px;
-  left: 139px;
+  flex: 1;
   opacity: 1;
   border: 1px solid rgba(255, 255, 255, 0.2);
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  padding: 10px 30px;
+  gap: 0.6rem;
+  padding: 1rem 1.5rem;
   background: rgba(255, 255, 255, 0.05);
   color: #fff;
 }
 
 .feature-box p {
   font-weight: 400;
-  font-size: 15px;
-  margin-top: 0px;
+  font-size: 0.95rem;
+  margin-top: 0;
 }
 
 .feature-box h3 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  font-style: normal;
-  font-size: 24px;
-  margin-bottom: 2px;
-
+  font-size: 1.5rem;
+  margin-bottom: 0.2rem;
 }
+
 .section-three-img {
   max-width: 100%;
-  width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
 
+/* FEATURES DRONE */
 .features-drone {
-  position: relative;
+  flex: 1;  /* take right side */
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
 .features-drone .drone-img {
   position: relative;
   z-index: 3;
-  width: 630px;
+  max-width: 40vw;
+  width: 100%;
   height: auto;
-  margin-top: 30px;
-  transform: translateX(18px);
+  margin: 3vh auto;
+  transform: translate(-4vw,2vh);
 }
 
 .features-drone .outer-circle {
   position: absolute;
-  width: 600px;
+   width: 600px;   /* fixed size instead of vw */
   height: 600px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background: linear-gradient(180deg, rgba(109, 109, 109, 0.5) 0%, #000 100%);
   opacity: 0.7;
   z-index: 1;
-  margin-left: 130px;
   display: block;
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 80px), black calc(100% - 80px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 80px), black calc(100% - 80px));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 24%), black calc(100% - 24%));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 24%), black calc(100% - 24%));
 }
 
 .features-drone .inner-circle {
   position: absolute;
-  width: 400px;
+  width: 400px;   /* fixed size instead of vw */
   height: 400px;
+  aspect-ratio: 1/1;
   border-radius: 50%;
   background: linear-gradient(0deg, rgba(109, 109, 109, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
   opacity: 0.7;
   z-index: 2;
-  margin-left: 130px;
   display: block;
-  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 24px), black calc(100% - 24px));
-  mask: radial-gradient(farthest-side, transparent calc(100% - 24px), black calc(100% - 24px));
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
+  mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
 }
+
