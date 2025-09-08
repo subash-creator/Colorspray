@@ -6,7 +6,7 @@ export default function Header() {
 
   return (
     <>
-      {/* Header is always visible */}
+     
       <header className={`header ${menuOpen ? "menu-open" : ""}`}>
         {!menuOpen && (
           <>
@@ -18,7 +18,7 @@ export default function Header() {
         )}
       </header>
 
-      {/* Menu overlay */}
+    
       {menuOpen && (
         <div className="menu-overlay">
           <div className="menu-logo">
@@ -39,6 +39,7 @@ export default function Header() {
           >
             ✕
           </button>
+           <img src="/soaron-logob.png" alt="" style={{ display: "none" }} />
         </div>
       )}
     </>
