@@ -1,23 +1,24 @@
 import { useState } from "react";
-import "./Header.css"; // optional for styling
+import "./Header.css";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      {!menuOpen && (
-        <header className="header">
-          <img src="soaron-logo.png" alt="Soaron Logo" className="logo-img" />
-          <button
-            className="menu-btn"
-            onClick={() => setMenuOpen(true)}
-          >
-            Menu <span className="menu-icon">☰</span>
-          </button>
-        </header>
-      )}
+      {/* Header is always visible */}
+      <header className={`header ${menuOpen ? "menu-open" : ""}`}>
+        {!menuOpen && (
+          <>
+            <img src="soaron-logo.png" alt="Soaron Logo" className="logo-img" />
+            <button className="menu-btn" onClick={() => setMenuOpen(true)}>
+              Menu <span className="menu-icon">☰</span>
+            </button>
+          </>
+        )}
+      </header>
 
+      {/* Menu overlay */}
       {menuOpen && (
         <div className="menu-overlay">
           <div className="menu-logo">

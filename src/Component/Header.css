@@ -5,6 +5,11 @@
   align-items: center;
   padding: 15px 100px;
   gap: 40px;
+  min-height: 50px;
+}
+
+.header.menu-open {
+  background: #000;
 }
 
 .logo-img,
@@ -31,9 +36,9 @@
 /* Menu Overlay */
 .menu-overlay {
   position: fixed;
-  top: 3%;
-  left: 7%;
-  width: 81.5%;
+  top: 1%;
+  left: 6.7%;
+  width: 82.5%;
   height: 40px;
   background: #fff;
   color: #000;
