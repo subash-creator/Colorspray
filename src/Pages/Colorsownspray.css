@@ -10,6 +10,7 @@
   height: 92vh;
   background-size: cover;
   background-position: center;
+   background: url("../assets/section1bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +39,6 @@
 }
 
 .hero-subtitle {
-  font-size: 1.8rem;
   margin-bottom: -40px;
   margin-left: -60px;
   font-family: 'Poppins', sans-serif;

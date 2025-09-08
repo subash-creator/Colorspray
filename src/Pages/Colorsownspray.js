@@ -5,7 +5,7 @@ import "./Colorsownspray.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
-import section1bg from "../assets/section1bg.jpg";
+
 import logo from "../assets/Colorown Spray Logo.png";
 import drone from "../assets/Drone.png";
 import drone1 from "../assets/Drone1.png";
@@ -27,11 +27,10 @@ export default function Colorsownspray() {
             {/* Hero Section */}
             <section
                 className="hero-section"
-                style={{ backgroundImage: `url(${section1bg})` }}
             >
                 <div className="overlay"></div>
                 <div className="hero-content">
-                    <img src={logo} alt="Colorown Spray Logo" className="hero-logo" />
+                    <img src={logo} alt="" className="hero-logo" />
                     <h2 className="hero-subtitle">Revolutionizing Aerial Painting</h2>
                     <img src={drone} alt="Drone" className="hero-drone" />
                     <button className="trail-btn">Trail</button>
@@ -62,7 +61,7 @@ export default function Colorsownspray() {
                 <div className="features-drone">
                     <div className="outer-circle"></div>
                     <div className="inner-circle"></div>
-                    <img src={drone1} alt="Drone Feature" className="drone-img" />
+                    <img src={drone1} alt="" className="drone-img" />
                 </div>
             </section>
 
