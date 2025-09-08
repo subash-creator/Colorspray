@@ -16,10 +16,9 @@ export default function Colorsownspray() {
                 />
             </Helmet>
 
-            {/* Header */}
+           
             <Header />
 
-            {/* Hero Section */}
             <section
                 className="hero-section"
                 style={{ backgroundImage: "url('/section1bg.jpg')" }}
@@ -60,14 +59,12 @@ export default function Colorsownspray() {
 
             </section>
 
-            {/* Section 3 */}
             <section className="section-three">
                 <div className="section-three-content">
                     <img src="/section3bg.png" alt="Section 3 Visual" className="section-three-img" />
                 </div>
             </section>
 
-            {/* Footer */}
             <Footer />
         </div>
     );
