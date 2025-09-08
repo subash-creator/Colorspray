@@ -1,8 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ComingSoon from "./Pages/ComingSoon";
-//import Colorsownspray from "./Pages/Colorsownspray";
+//import ComingSoon from "./Pages/ComingSoon";
+
 import Career from "./Pages/Career";
 import Press from "./Pages/Press";
+import Colorsownspray from "./Pages/Colorsownspray";
 function App() {
   return (
     <Router>
@@ -10,7 +11,7 @@ function App() {
        
 
         {/* Coming Soon page */}
-        <Route path="/" element={<ComingSoon />} />
+        <Route path="/" element={<Colorsownspray />} />
 
         {/* Careers page */}
         <Route path="/career" element={<Career />} />
