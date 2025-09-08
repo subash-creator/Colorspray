@@ -31,7 +31,7 @@
 }
 
 .hero-logo {
-  max-width: 40vw;   /* scalable */
+  max-width: 40vw;
   width: 100%;
   transform: translateY(10vh);
 }
@@ -40,10 +40,10 @@
   transform: translateY(6vh);
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
-  font-size: clamp(1.2rem, 2vw, 2rem); /* responsive */
+  font-size: clamp(1.2rem, 2vw, 2rem);
   line-height: 1.2;
   letter-spacing: 0;
-  
+
 }
 
 .hero-drone {
@@ -51,7 +51,7 @@
   width: 100%;
   display: block;
   z-index: 1;
-  transform: translate(8vh ,-3.5vh);
+  transform: translate(8vh, -3.5vh);
 }
 
 .trail-btn {
@@ -83,12 +83,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 8vh 7%;
-  background: radial-gradient(
-    circle at bottom left,
-    rgba(128, 128, 128, 0.4) 0%,
-    rgba(0, 0, 0, 0.9) 60%, 
-    rgba(0, 0, 0, 1) 100%
-  );
+  background: radial-gradient(circle at bottom left,
+      rgba(128, 128, 128, 0.4) 0%,
+      rgba(0, 0, 0, 0.9) 60%,
+      rgba(0, 0, 0, 1) 100%);
   color: #fff;
   min-height: 100vh;
   gap: 5vw;
@@ -96,7 +94,8 @@
 }
 
 .features-grid {
-  flex: 1;  /* take left side */
+  flex: 1;
+  /* take left side */
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -137,7 +136,8 @@
 
 /* FEATURES DRONE */
 .features-drone {
-  flex: 1;  /* take right side */
+  flex: 1;
+  /* take right side */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,13 +150,16 @@
   width: 100%;
   height: auto;
   margin: 3vh auto;
-  transform: translate(-4vw,2vh);
+  transform: translate(-4vw, 2vh);
 }
 
 .features-drone .outer-circle {
   position: absolute;
-   width: 600px;   /* fixed size instead of vw */
-  height: 600px;
+  width: 40vw;
+  height: 40vw;
+  max-width: 600px;
+  max-height: 600px;
+
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: linear-gradient(180deg, rgba(109, 109, 109, 0.5) 0%, #000 100%);
@@ -169,8 +172,11 @@
 
 .features-drone .inner-circle {
   position: absolute;
-  width: 400px;   /* fixed size instead of vw */
-  height: 400px;
+  width: 40vw;
+  height: 40vw;
+  max-width: 400px;
+  max-height: 400px;
+
   aspect-ratio: 1/1;
   border-radius: 50%;
   background: linear-gradient(0deg, rgba(109, 109, 109, 0.3) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -180,4 +186,3 @@
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
   mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
 }
-
