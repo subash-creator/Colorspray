@@ -5,6 +5,8 @@ import "./ComingSoon.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
+// ✅ Import image from src/assets
+import rocket from "../assets/rocket.png";
 
 export default function ComingSoon() {
   return ( 
@@ -23,7 +25,7 @@ export default function ComingSoon() {
       {/* Main Content */}
       <main className="main-content">
         <img
-          src="rocket.png"
+          src={rocket}
           alt="Rocket"
           className="rocket-img"
         />

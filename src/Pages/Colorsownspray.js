@@ -5,6 +5,12 @@ import "./Colorsownspray.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
+import section1bg from "../assets/section1bg.jpg";
+import logo from "../assets/Colorown Spray Logo.png";
+import drone from "../assets/Drone.png";
+import drone1 from "../assets/Drone1.png";
+import section3bg from "../assets/section3bg.png";
+
 export default function Colorsownspray() {
     return (
         <div className="colorownspray-container">
@@ -16,21 +22,23 @@ export default function Colorsownspray() {
                 />
             </Helmet>
 
-           
             <Header />
 
+            {/* Hero Section */}
             <section
                 className="hero-section"
-                style={{ backgroundImage: "url('/section1bg.jpg')" }}
+                style={{ backgroundImage: `url(${section1bg})` }}
             >
                 <div className="overlay"></div>
                 <div className="hero-content">
-                    <img src="/Colorown Spray Logo.png" alt="Colorown Spray Logo" className="hero-logo" />
+                    <img src={logo} alt="Colorown Spray Logo" className="hero-logo" />
                     <h2 className="hero-subtitle">Revolutionizing Aerial Painting</h2>
-                    <img src="/Drone.png" alt="Drone" className="hero-drone" />
+                    <img src={drone} alt="Drone" className="hero-drone" />
                     <button className="trail-btn">Trail</button>
                 </div>
             </section>
+
+            {/* Features Section */}
             <section className="features-section">
                 <div className="features-grid">
                     <div className="feature-box">
@@ -47,21 +55,21 @@ export default function Colorsownspray() {
                     </div>
                     <div className="feature-box">
                         <h3>Faster</h3>
-                        <p>High-performance drone delivering rapid, consistent results.</p>
+                        <p>Speed up your painting projects with our high-performance drone, delivering rapid, consistent results.</p>
                     </div>
                 </div>
-               
-                    <div className="features-drone">
-                        <div className="outer-circle"></div>
-                        <div className="inner-circle"></div>
-                        <img src="/Drone1.png" alt="Drone Feature" className="drone-img" />
-                    </div>
 
+                <div className="features-drone">
+                    <div className="outer-circle"></div>
+                    <div className="inner-circle"></div>
+                    <img src={drone1} alt="Drone Feature" className="drone-img" />
+                </div>
             </section>
 
+            {/* Section Three */}
             <section className="section-three">
                 <div className="section-three-content">
-                    <img src="/section3bg.png" alt="Section 3 Visual" className="section-three-img" />
+                    <img src={section3bg} alt="Section 3 Visual" className="section-three-img" />
                 </div>
             </section>
 
