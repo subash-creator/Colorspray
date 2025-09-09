@@ -5,7 +5,6 @@
   background: #000;
 }
 
-/* HERO SECTION */
 .hero-section {
   position: relative;
   height: 92vh;
@@ -95,7 +94,7 @@
 
 .features-grid {
   flex: 1;
-  /* take left side */
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
@@ -137,7 +136,7 @@
 /* FEATURES DRONE */
 .features-drone {
   flex: 1;
-  /* take right side */
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -185,4 +184,99 @@
   display: block;
   -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
   mask: radial-gradient(farthest-side, transparent calc(100% - 12%), black calc(100% - 12%));
+}
+
+
+
+
+/* Mobile (max 768px) */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto;
+    padding: 8vh 5%;
+    flex-direction: column;
+    justify-content: flex-start;
+    transform: scaleX(-1);
+  }
+
+  .hero-content {
+    transform: scaleX(-1);
+    text-align: center;
+    margin-top: 5vh;
+  }
+
+  .hero-logo {
+    max-width: 80vw;
+    transform: none;
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1rem, 4vw, 1.5rem);
+    transform: none;
+    margin-top: 2vh;
+  }
+
+  .hero-drone {
+    max-width: 75vw;
+    margin: 5vh auto;
+    transform: none;
+  }
+
+
+  .trail-btn {
+    position: relative;
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin: 4vh auto 0 auto;
+    width: clamp(160px, 60%, 220px);
+  }
+
+  .features-section {
+    flex-direction: column;
+    padding: 5vh 5%;
+    gap: 10vh;
+    background: radial-gradient(circle at 33% 67%,
+        rgba(128, 128, 128, 0.45) 0%,      
+        rgba(128, 128, 128, 0.27) 40%,
+        rgba(0, 0, 0, 0.85) 95%,
+        rgba(0, 0, 0, 1) 100%);
+    color: #fff;
+  }
+
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    order: 2;
+  }
+
+  .features-drone {
+    order: 1;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3vh;
+
+  }
+
+  .features-drone .drone-img {
+    max-width: 70vw;
+    margin: 0 auto;
+    transform: none;
+    position: relative;
+    z-index: 3;
+  }
+
+  .features-drone .outer-circle {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .features-drone .inner-circle {
+    width: 43vw;
+    height: 43vw;
+  }
 }
