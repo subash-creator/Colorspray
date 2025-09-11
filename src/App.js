@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Career from "./Pages/Career";
 import Press from "./Pages/Press";
-import Colorsownspray from "./Pages/Colorsownspray";
+
+import ComingSoon from "./Pages/ComingSoon";
 function App() {
   return (
     <Router>
@@ -9,7 +10,7 @@ function App() {
        
 
         {/* Coming Soon page */}
-        <Route path="/" element={<Colorsownspray />} />
+        <Route path="/" element={<ComingSoon />} />
 
         {/* Careers page */}
         <Route path="/career" element={<Career />} />
