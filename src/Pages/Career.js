@@ -4,8 +4,11 @@ export default function Career() {
   return (
     <div>
       <Helmet>
-        <title>Careers | Soaron</title>
-        <meta name="description" content="Explore career opportunities at Soaron Aerospace Innovations." />
+        <title>Careers at Soaron Aerospace Innovations</title>
+        <meta
+          name="description"
+          content="Join Soaron Aerospace Innovations – explore exciting career opportunities in aerospace, drones, and advanced technology."
+        />
       </Helmet>
 
       <h1>Careers</h1>
