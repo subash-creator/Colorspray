@@ -3,3 +3,5 @@ User-agent: *
 Allow: /favicon.ico
 Allow: /soaron-favicon-192.png
 Allow: /soaron-favicon-512.png
+
+Sitemap: https://soaron.co/sitemap.xml
