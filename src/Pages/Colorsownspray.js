@@ -33,7 +33,7 @@ export default function Colorsownspray() {
                     <img src={logo} alt="" className="hero-logo" />
                     <h2 className="hero-subtitle">Revolutionizing Aerial Painting</h2>
                     <img src={drone} alt="Drone" className="hero-drone" />
-                    <button className="trail-btn">Trail</button>
+                    <button className="trial-btn">Trial</button>
                 </div>
             </section>
 

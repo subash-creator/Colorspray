@@ -8,12 +8,22 @@
 .hero-section {
   position: relative;
   height: 92vh;
-  background: url("../assets/section1bg.jpg") center/cover no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scaleX(-1);
+  overflow: hidden;   /* keep bg + drone inside bounds */
 }
+
+.hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../assets/section1bg.jpg") center/cover no-repeat;
+  transform: scaleX(-1);   
+  z-index: 0;              
+}
+
+
 
 .overlay {
   position: absolute;
@@ -26,7 +36,7 @@
   z-index: 2;
   text-align: center;
   color: #fff;
-  transform: scaleX(-1);
+
 }
 
 .hero-logo {
@@ -53,7 +63,7 @@
   transform: translate(8vh, -3.5vh);
 }
 
-.trail-btn {
+.trial-btn {
   position: absolute;
   bottom: 10vh;
   left: 48%;
@@ -71,7 +81,7 @@
   font-weight: 500;
 }
 
-.trail-btn:hover {
+.trial-btn:hover {
   background: #f0f0f0;
 }
 
@@ -195,12 +205,10 @@
     height: auto;
     padding: 8vh 5%;
     flex-direction: column;
-    justify-content: flex-start;
-    transform: scaleX(-1);
+    justify-content: flex-start;   
   }
 
   .hero-content {
-    transform: scaleX(-1);
     text-align: center;
     margin-top: 5vh;
   }
@@ -217,13 +225,13 @@
   }
 
   .hero-drone {
-    max-width: 75vw;
+    max-width: 1200vw;
     margin: 5vh auto;
     transform: none;
   }
 
 
-  .trail-btn {
+  .trial-btn {
     position: relative;
     bottom: auto;
     left: auto;
@@ -234,7 +242,7 @@
 
   .features-section {
     flex-direction: column;
-    padding: 5vh 5%;
+    padding: 10vh 5%;
     gap: 10vh;
     background: radial-gradient(circle at 33% 67%,
         rgba(128, 128, 128, 0.45) 0%,      
@@ -279,4 +287,92 @@
     width: 43vw;
     height: 43vw;
   }
+} 
+/* Small phones (max 480px) */
+@media (max-width: 480px) {
+  .hero-logo {
+    max-width: 90vw;
+  }
+
+  .hero-subtitle {
+    font-size: 1rem;
+    margin-top: 1.5vh;
+  }
+
+  .hero-drone {
+    max-width: 80vw;
+  }
+
+  .trial-btn {
+    width: 150px;
+    height: 2.6rem;
+    font-size: 0.9rem;
+  }
+
+  .features-drone .drone-img {
+    max-width: 80vw;
+  }
+
+  .features-drone .outer-circle {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .features-drone .inner-circle {
+    width: 50vw;
+    height: 50vw;
+  }
 }
+
+/* Tablet (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero-section {
+    height: 80vh;
+  }
+
+  .hero-logo {
+    max-width: 50vw;
+    transform: translateY(5vh);
+  }
+
+  .hero-subtitle {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    transform: translateY(3vh);
+  }
+
+  .hero-drone {
+    max-width: 50vw;
+    transform: translate(5vh, -2vh);
+  }
+
+  .trial-btn {
+    bottom: 8vh;
+    width: clamp(180px, 25vw, 230px);
+  }
+
+  .features-section {
+    flex-direction: row;
+    gap: 3vw;
+    padding: 6vh 5%;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .features-drone .drone-img {
+    max-width: 50vw;
+    transform: translate(-3vw, 1vh);
+  }
+
+  .features-drone .outer-circle {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .features-drone .inner-circle {
+    width: 35vw;
+    height: 35vw;
+  }
+}
+
