@@ -5,7 +5,7 @@ import "./ComingSoon.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
-// ✅ Import image from src/assets
+
 import rocket from "../assets/rocket.png";
 
 export default function ComingSoon() {
@@ -19,10 +19,10 @@ export default function ComingSoon() {
         />
       </Helmet>
 
-      {/* Header */}
+
       <Header />
 
-      {/* Main Content */}
+
       <main className="main-content">
         <img
           src={rocket}
@@ -33,7 +33,7 @@ export default function ComingSoon() {
         <p className="subtitle">Stay tuned for something amazing</p>
       </main>
 
-      {/* Footer */}
+
       <Footer />
     </div>
   );

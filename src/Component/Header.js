@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Header.css";
 
-// ✅ Import images from src/assets
+
 import logo from "../assets/soaron-logo.png";
 import logob from "../assets/soaron-logob.png";
 
@@ -9,7 +9,8 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <>
+    <> 
+    <img src={logob} alt="" style={{ display: "none" }} />
       <header className={`header ${menuOpen ? "menu-open" : ""}`}>
         {!menuOpen && (
           <>
@@ -41,8 +42,8 @@ export default function Header() {
           >
             ✕
           </button>
-          {/* Preload image for smooth transition */}
-          <img src={logob} alt="" style={{ display: "none" }} />
+
+          
         </div>
       )}
     </>

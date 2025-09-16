@@ -35,7 +35,7 @@
 
 /* Menu Overlay */
 .menu-overlay {
-  position: fixed;
+  position: absolute;
   top: 1%;
   left: 6.7%;
   width: 82.5%;
