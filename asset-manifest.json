@@ -1,22 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.689db1d8.css",
-    "main.js": "./static/js/main.dafa4e13.js",
+    "main.css": "./static/css/main.42e5757a.css",
+    "main.js": "./static/js/main.7c483b5f.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
-    "static/media/section1bg.jpg": "./static/media/section1bg.4788bd525efaaa51303a.jpg",
-    "static/media/section3bg.png": "./static/media/section3bg.99bebae3051a5846298e.png",
-    "static/media/Drone.png": "./static/media/Drone.3fa069eb7d166a678e7d.png",
-    "static/media/Drone1.png": "./static/media/Drone1.ad89232b9ea0b9dd2122.png",
-    "static/media/Colorown Spray Logo.png": "./static/media/Colorown Spray Logo.1381467604141d046f47.png",
     "static/media/soaron-logo.png": "./static/media/soaron-logo.db9fba8b75ee12d6031b.png",
     "static/media/soaron-logob.png": "./static/media/soaron-logob.fb7c25fbd95341fdc453.png",
     "index.html": "./index.html",
-    "main.689db1d8.css.map": "./static/css/main.689db1d8.css.map",
-    "main.dafa4e13.js.map": "./static/js/main.dafa4e13.js.map",
+    "main.42e5757a.css.map": "./static/css/main.42e5757a.css.map",
+    "main.7c483b5f.js.map": "./static/js/main.7c483b5f.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.689db1d8.css",
-    "static/js/main.dafa4e13.js"
+    "static/css/main.42e5757a.css",
+    "static/js/main.7c483b5f.js"
   ]
 }
