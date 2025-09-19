@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "./static/css/main.e86952ad.css",
-    "main.js": "./static/js/main.ab607917.js",
+    "main.css": "./static/css/main.33cee82d.css",
+    "main.js": "./static/js/main.61efb7a5.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
     "static/media/soaron-logo.png": "./static/media/soaron-logo.db9fba8b75ee12d6031b.png",
     "static/media/soaron-logob.png": "./static/media/soaron-logob.fb7c25fbd95341fdc453.png",
     "index.html": "./index.html",
-    "main.e86952ad.css.map": "./static/css/main.e86952ad.css.map",
-    "main.ab607917.js.map": "./static/js/main.ab607917.js.map",
+    "main.33cee82d.css.map": "./static/css/main.33cee82d.css.map",
+    "main.61efb7a5.js.map": "./static/js/main.61efb7a5.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e86952ad.css",
-    "static/js/main.ab607917.js"
+    "static/css/main.33cee82d.css",
+    "static/js/main.61efb7a5.js"
   ]
 }
