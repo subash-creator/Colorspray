@@ -105,3 +105,124 @@ body{
   border-color: #D2D2D2;
   border-width: 2px;;
 }
+/* Section 3 */
+.section-3 {
+  text-align: center;
+  padding: 80px 20px;
+  background: #000; /* match your theme */
+  color: #fff;
+}
+
+.section-3 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-3 p {
+  font-size: 1rem;
+  margin-bottom: 40px;
+  color: #ccc;
+}
+
+.section-3 .container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card box */
+.section-3 .box1 {
+  background: transparent;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 30px 20px;
+  flex: 1 1 280px;
+  max-width: 320px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.section-3 .box1:hover {
+  border-color: #666;
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Icon box */
+.section-3 .box1 img {
+  background: #fff;
+  padding: 14px;
+  border-radius: 8px;
+  width: 60px;
+  height: 60px;
+  margin-bottom: 20px;
+  object-fit: contain;
+}
+
+/* Headings inside cards */
+.section-3 .box1 h1 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+/* Paragraph inside cards */
+.section-3 .box1 p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #ccc;
+}
+
+/* Section 4 - List Style */
+.section-4 {
+  padding: 80px 10%;
+  background: #fff;
+}
+
+.section-4 h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #111827;
+  text-align: left;
+}
+
+.section-4 > p {
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+  color: #4b5563;
+  text-align: left;
+}
+
+.features-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.feature-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.feature-row img {
+  width: 50px;
+  height: 50px;
+}
+
+.feature-row h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #111827;
+}
+
+.feature-row p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.5;
+}
