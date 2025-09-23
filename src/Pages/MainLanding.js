@@ -26,8 +26,12 @@ export default function MainLanding() {
             </section>
             <section className="section-2">
                 <h1>Who We Are</h1>
-                <p>Soaron is an aerospace-tech company developing drones that transform the way construction projects are maintained.
-                    From industrial coatings to façade cleaning, our systems deliver high-precision results without putting human lives at risk.</p>
+                <p>
+                    Soaron is an aerospace-tech company developing drones that transform the way
+                    construction projects are maintained. From industrial coatings to façade
+                    cleaning, our systems deliver high-precision results without putting human
+                    lives at risk.
+                </p>
                 <div className="container">
                     <div className="box">
                         <h1>9</h1>
@@ -35,7 +39,7 @@ export default function MainLanding() {
                     </div>
                     <div className="box">
                         <h1>₹50L</h1>
-                        <p>Working Prototypes Built</p>
+                        <p>Funds Raised</p>
                     </div>
                     <div className="box">
                         <h1>2+</h1>
@@ -43,6 +47,7 @@ export default function MainLanding() {
                     </div>
                 </div>
             </section>
+
             <section className="section-3">
                 <h1>Drone Solutions for Construction</h1>
                 <p>Autonomous aerial systems for safer, faster, and smarter construction maintenance.</p>

@@ -34,13 +34,13 @@ body{
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.3;
   margin-bottom: 1rem;
+ 
 }
 
 .section-1 p {
   font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 400;
-  color: #ccc;
-  max-width: 700px;
+  font-weight: 500;
+  color: white;
   margin-bottom: 2rem;
 }
 
@@ -76,58 +76,85 @@ body{
   color: #000;
 }
 .section-2 {
-  position: relative;
-  height:  74vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;  
-  padding: 0 6.7%;
+  padding: 80px 6.7%;
   background: #fff;
-  color: black;
+  color: #000;
   text-align: left;
 }
-.container{
+
+.section-2 h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;       /* Bold */
+  font-style: normal;     /* not italic */
+  font-size: 43px;        /* exact size */
+  line-height: 100%;      /* same as font size (tight) */
+  letter-spacing: 0;      /* no extra spacing */
+  margin-bottom: 15px;
+  color: #111827;         /* dark gray/black for readability */
+}
+
+.section-2 p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;       /* Medium */
+  font-style: normal;     /* not italic */
+  font-size: 18px;
+  line-height: 24px;      /* good readability */
+  letter-spacing: 0;
+  color: #121212;         /* dark text */
+  margin-bottom: 40px;
+}
+
+
+.section-2 .container {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-}
-.box{
-  width: 40%;
-  height: 40%;
   gap: 20px;
-  padding: 20px;
-  margin-left: 10px;
-  background-color: #f5f5f5;
-  border-color: #D2D2D2;
-  border-width: 2px;;
+  flex-wrap: wrap; /* responsive */
 }
+
+.section-2 .box {
+  flex: 1;
+  min-width: 220px;
+  background: #fff;
+  border: 3px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 30px 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  
+}
+
 /* Section 3 */
 .section-3 {
-  text-align: center;
-  padding: 80px 20px;
+  padding: 80px 6.7%;
   background: #000; 
   color: #fff;
+   text-align: left;
 }
 
 .section-3 h1 {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;       /* Bold */
+  font-style: normal;     /* not italic */
+  font-size: 43px;        /* exact size */
+  line-height: 100%;      /* tight, like Figma spec */
+  letter-spacing: 0;      /* no extra spacing */
+  margin-bottom: 15px;
+  
 }
 
+
 .section-3 p {
-  font-size: 1rem;
-  margin-bottom: 40px;
-  color: #ccc;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;       /* Regular */
+  font-style: normal;     /* not italic */
+  font-size: 16px;
+  line-height: 150%;      /* 1.5x for readability */
+  letter-spacing: 0;
 }
+
 
 .section-3 .container {
   display: flex;
-  justify-content: center;
   gap: 30px;
   flex-wrap: wrap;
 }
@@ -140,7 +167,6 @@ body{
   padding: 30px 20px;
   flex: 1 1 280px;
   max-width: 320px;
-  text-align: center;
   transition: all 0.3s ease-in-out;
 }
 
@@ -178,7 +204,7 @@ body{
 
 
 .section-4 {
-  padding: 80px 10%;
+  padding: 80px 6.7%;
   background: #fff;
 }
 
