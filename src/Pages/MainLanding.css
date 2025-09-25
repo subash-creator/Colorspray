@@ -1,287 +1,87 @@
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
 }
-html{
+html {
   scrollbar-width: none;
 }
-body{
+body {
   -ms-overflow-style: none;
-}
-.main-landing-container {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}.main-landing-container {
   background: #000;
   color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} 
-.section-1 {
-  position: relative;
-  height:  74vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;  /* text aligned left */
-  padding: 0 6.7%;
-  background: #000;
-  color: #fff;
-  text-align: left;
+  text-align: center;
 }
 
-.section-1 h1 {
+/* Hero + Features */
+.hero-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical center */
+  align-items: center;     /* horizontal center */
+  padding: 60px 6.7%;
+}
+
+.hero-section h1 {
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
   font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.3;
-  margin-bottom: 1rem;
- 
+  margin-bottom: 2.5rem;
+  max-width: 900px;
 }
 
-.section-1 p {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 500;
-  color: white;
-  margin-bottom: 2rem;
-}
-
-.section-1 .waitlist,
-.section-1 .Partner {
-  padding: 0.8rem 1.5rem;
-  border-radius: 6px;
-  font-size: 1rem;
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  border: none;
-  margin-right: 1rem;
-}
-
-.section-1 .waitlist {
-  background: #fff;
-  color: #000;
-}
-
-.section-1 .waitlist:hover {
-  background: #f5f5f5;
-}
-
-.section-1 .Partner {
-  background: transparent;
-  border: 1px solid #fff;
-  color: #fff;
-}
-
-.section-1 .Partner:hover {
-  background: #fff;
-  color: #000;
-}
-.section-2 {
-  padding: 80px 6.7%;
-  background: #fff;
-  color: #000;
-  text-align: left;
-}
-
-.section-2 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;       /* Bold */
-  font-style: normal;     /* not italic */
-  font-size: 43px;        /* exact size */
-  line-height: 100%;      /* same as font size (tight) */
-  letter-spacing: 0;      /* no extra spacing */
-  margin-bottom: 15px;
-  color: #111827;         /* dark gray/black for readability */
-}
-
-.section-2 p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;       /* Medium */
-  font-style: normal;     /* not italic */
-  font-size: 18px;
-  line-height: 24px;      /* good readability */
-  letter-spacing: 0;
-  color: #121212;         /* dark text */
-  margin-bottom: 40px;
-}
-
-
-.section-2 .container {
+/* Icon Row */
+.icon-row {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap; /* responsive */
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap; /* responsive wrap */
 }
 
-.section-2 .box {
-  flex: 1;
-  min-width: 220px;
-  background: #fff;
-  border: 3px solid #e5e7eb;
-  border-radius: 8px;
-  padding: 30px 20px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
-  
-}
-
-/* Section 3 */
-.section-3 {
-  padding: 80px 6.7%;
-  background: #000; 
-  color: #fff;
-   text-align: left;
-}
-
-.section-3 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;       /* Bold */
-  font-style: normal;     /* not italic */
-  font-size: 43px;        /* exact size */
-  line-height: 100%;      /* tight, like Figma spec */
-  letter-spacing: 0;      /* no extra spacing */
-  margin-bottom: 15px;
-  
-}
-
-
-.section-3 p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;       /* Regular */
-  font-style: normal;     /* not italic */
-  font-size: 16px;
-  line-height: 150%;      /* 1.5x for readability */
-  letter-spacing: 0;
-}
-
-
-.section-3 .container {
+.icon-box {
   display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-/* Card box */
-.section-3 .box1 {
-  background: transparent;
-  border: 1px solid #333;
-  border-radius: 12px;
-  padding: 30px 20px;
-  flex: 1 1 280px;
-  max-width: 320px;
-  transition: all 0.3s ease-in-out;
-}
-
-.section-3 .box1:hover {
-  border-color: #666;
-  transform: translateY(-8px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.6);
-}
-
-/* Icon box */
-.section-3 .box1 img {
-  background: #fff;
+.icon-box img {
+  width: 70px;
+  height: 70px;
   padding: 14px;
-  border-radius: 8px;
-  width: 60px;
-  height: 60px;
-  margin-bottom: 20px;
+  background: #fff;
+  border-radius: 12px;
   object-fit: contain;
 }
 
-/* Headings inside cards */
-.section-3 .box1 h1 {
-  font-size: 1.2rem;
-  font-weight: 700;
-  margin-bottom: 10px;
+.icon-box h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin: 0;
   color: #fff;
 }
 
-
-.section-3 .box1 p {
-  font-size: 0.95rem;
-  line-height: 1.5;
-  color: #ccc;
-}
-
-.section-4 {
-  padding: 80px 6.7%;
-  background: #fff;
-  color: #000;
-  text-align: left;
-}
-
-.section-4 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;       /* Bold */
-  font-style: normal;     /* not italic */
-  font-size: 43px;        /* exact size */
-  line-height: 100%;      /* same as font size (tight) */
-  letter-spacing: 0;      /* no extra spacing */
-  margin-bottom: 15px;
-  color: #111827;         /* dark gray/black for readability */
-}
-
-
-.section-4 > p {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 500;       /* Medium */
-  font-style: normal;     /* CSS doesn’t support "Medium", handled by weight */
-  font-size: 18px;        /* exact size */
-  line-height: 24px;      /* fixed line height */
-  letter-spacing: 0;      /* no extra spacing */
-  color: #4b5563;         /* soft gray for readability */
-  margin-bottom: 40px;
-}
-
-
-/* Features list layout */
-.features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-
-/* Feature row layout */
-.feature-row {
-  display: flex;
-  align-items: center;   /* vertically center icon + text */
-  gap: 15px;
-}
-
-/* Icon styling */
-.feature-row img {
-  width: 50px;
-  height: 50px;
-  padding: 10px;
-  background: #000;      /* dark background */
-  border-radius: 8px;
-  object-fit: contain;
-  flex-shrink: 0;   
-  margin-top: 20px;     /* prevent icon from shrinking */
-}
-
-/* Text wrapper (h2 + p) */
-.feature-text {
-  display: flex;
-  flex-direction: column;
-}
-
-
-/* Title */
-.section-4 h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;       /* Bold */
-  font-style: normal;     /* not italic */
-  font-size: 24px;        /* exact size */
-  line-height: 130%;      /* Figma: 130% */
-  letter-spacing: -0.01em; /* -1% letter spacing */
-  color: #111827;         /* dark gray/black */
-  margin-bottom: 8px;
-}
-
-/* Description */
-.feature-row p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.5;
-  margin: 0;
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 1.8rem;
+    line-height: 1.4;
+  }
+  .icon-row {
+    gap: 25px;
+  }
+  .icon-box img {
+    width: 60px;
+    height: 60px;
+  }
 }
