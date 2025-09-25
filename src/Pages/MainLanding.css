@@ -202,53 +202,86 @@ body{
   color: #ccc;
 }
 
-
 .section-4 {
   padding: 80px 6.7%;
   background: #fff;
+  color: #000;
+  text-align: left;
 }
 
 .section-4 h1 {
-  font-size: 2.5rem;
-  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;       /* Bold */
+  font-style: normal;     /* not italic */
+  font-size: 43px;        /* exact size */
+  line-height: 100%;      /* same as font size (tight) */
+  letter-spacing: 0;      /* no extra spacing */
   margin-bottom: 15px;
-  color: #111827;
-  text-align: left;
+  color: #111827;         /* dark gray/black for readability */
 }
+
 
 .section-4 > p {
-  font-size: 1.1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;       /* Medium */
+  font-style: normal;     /* CSS doesn’t support "Medium", handled by weight */
+  font-size: 18px;        /* exact size */
+  line-height: 24px;      /* fixed line height */
+  letter-spacing: 0;      /* no extra spacing */
+  color: #4b5563;         /* soft gray for readability */
   margin-bottom: 40px;
-  color: #4b5563;
-  text-align: left;
 }
 
+
+/* Features list layout */
 .features-list {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
+/* Feature row layout */
 .feature-row {
   display: flex;
-  align-items: flex-start;
-  gap: 20px;
+  align-items: center;   /* vertically center icon + text */
+  gap: 15px;
 }
 
+/* Icon styling */
 .feature-row img {
   width: 50px;
   height: 50px;
+  padding: 10px;
+  background: #000;      /* dark background */
+  border-radius: 8px;
+  object-fit: contain;
+  flex-shrink: 0;   
+  margin-top: 20px;     /* prevent icon from shrinking */
 }
 
-.feature-row h2 {
-  font-size: 1.3rem;
-  font-weight: 700;
+/* Text wrapper (h2 + p) */
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* Title */
+.section-4 h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;       /* Bold */
+  font-style: normal;     /* not italic */
+  font-size: 24px;        /* exact size */
+  line-height: 130%;      /* Figma: 130% */
+  letter-spacing: -0.01em; /* -1% letter spacing */
+  color: #111827;         /* dark gray/black */
   margin-bottom: 8px;
-  color: #111827;
 }
 
+/* Description */
 .feature-row p {
   font-size: 1rem;
   color: #4b5563;
   line-height: 1.5;
+  margin: 0;
 }

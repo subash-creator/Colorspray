@@ -5,6 +5,15 @@ import "./MainLanding.css";
 
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
+import aiSmartIcon from "../assets/ai_smart_icon 1.svg";
+import battleTestedIcon from "../assets/battle_tested_icon 1.svg";
+import cleaningIcon from "../assets/cleaning_icon 1.svg";
+import coatingIcon from "../assets/coating_icon 1.svg";
+import fasterIcon from "../assets/faster_icon 1.svg";
+import paintingIcon from "../assets/painting_icon (2) 1.svg";
+import saferIcon from "../assets/safer_icon 1.svg";
+
+
 export default function MainLanding() {
     return (
         <div className="main-landing-container">
@@ -53,17 +62,17 @@ export default function MainLanding() {
                 <p>Autonomous aerial systems for safer, faster, and smarter construction maintenance.</p>
                 <div className="container">
                     <div className="box1">
-                        <img src="/icons/painting.png" alt="Painting" />
+                        <img src={paintingIcon} alt="Painting" />
                         <h1>Painting</h1>
                         <p>Large-scale exterior & high-rise painting with unmatched precision and coverage.</p>
                     </div>
                     <div className="box1">
-                        <img src="/icons/coating.png" alt="Coating" />
+                        <img src={coatingIcon} alt="Coating" />
                         <h1>Coating</h1>
                         <p>Protective, industrial-grade coatings applied with consistent thickness and quality.</p>
                     </div>
                     <div className="box1">
-                        <img src="/icons/cleaning.png" alt="Cleaning" />
+                        <img src={cleaningIcon} alt="Cleaning" />
                         <h1>Cleaning</h1>
                         <p>Façade & glass cleaning at hazardous heights without scaffolding.</p>
                     </div>
@@ -76,28 +85,28 @@ export default function MainLanding() {
                 <p>Experience the future of construction with our proven technology and unmatched benefits</p>
                 <div className="features-list">
                     <div className="feature-row">
-                        <img src="/icons/safer.png" alt="Safer" />
+                        <img src={saferIcon} alt="Safer" />
                         <div>
                             <h2>Safer</h2>
                             <p>Eliminates risky scaffolding work and reduces workplace accidents by 95%. Protect your workforce with autonomous solutions.</p>
                         </div>
                     </div>
                     <div className="feature-row">
-                        <img src="/icons/faster.png" alt="Faster" />
+                        <img src={fasterIcon} alt="Faster" />
                         <div>
                             <h2>Faster</h2>
                             <p>Our drones complete construction jobs 3–5x quicker than traditional methods, dramatically reducing project timelines.</p>
                         </div>
                     </div>
                     <div className="feature-row">
-                        <img src="/icons/ai.png" alt="AI Powered" />
+                        <img src={aiSmartIcon} alt="AI Powered" />
                         <div>
                             <h2>AI-Powered Smart</h2>
                             <p>Advanced AI precision technology reduces material waste by up to 40% while ensuring consistent, high-quality results every time.</p>
                         </div>
                     </div>
                     <div className="feature-row">
-                        <img src="/icons/battle.png" alt="Battle Tested" />
+                        <img src={battleTestedIcon} alt="Battle Tested" />
                         <div>
                             <h2>Battle-Tested Proven</h2>
                             <p>Multiple prototypes rigorously tested and validated with leading construction firms. Ready for real-world deployment.</p>
