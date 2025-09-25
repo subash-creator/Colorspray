@@ -1,24 +1,21 @@
 {
   "files": {
-    "main.css": "./static/css/main.434f6dc3.css",
-    "main.js": "./static/js/main.9a1dc435.js",
+    "main.css": "./static/css/main.4e0d4ee6.css",
+    "main.js": "./static/js/main.dc339919.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
     "static/media/soaron-logo.png": "./static/media/soaron-logo.db9fba8b75ee12d6031b.png",
     "static/media/soaron-logob.png": "./static/media/soaron-logob.fb7c25fbd95341fdc453.png",
     "static/media/ai_smart_icon 1.svg": "./static/media/ai_smart_icon 1.87fab7fd73a7264d04994bc7d0295cfa.svg",
-    "static/media/cleaning_icon 1.svg": "./static/media/cleaning_icon 1.f6edc4eb683a2d2e9f928f33c6a68512.svg",
-    "static/media/coating_icon 1.svg": "./static/media/coating_icon 1.ed0850c3b4585e53294148fe2dbc18b3.svg",
-    "static/media/painting_icon (2) 1.svg": "./static/media/painting_icon (2) 1.4a737bfdc427b78e136aded632345af5.svg",
     "static/media/faster_icon 1.svg": "./static/media/faster_icon 1.be3b17635cc87a46078d690a62075257.svg",
     "static/media/battle_tested_icon 1.svg": "./static/media/battle_tested_icon 1.235a40e310ad9afd08cad1f91d83a7a1.svg",
     "static/media/safer_icon 1.svg": "./static/media/safer_icon 1.407e70238b1748d2585ac8074b18f8fe.svg",
     "index.html": "./index.html",
-    "main.434f6dc3.css.map": "./static/css/main.434f6dc3.css.map",
-    "main.9a1dc435.js.map": "./static/js/main.9a1dc435.js.map",
+    "main.4e0d4ee6.css.map": "./static/css/main.4e0d4ee6.css.map",
+    "main.dc339919.js.map": "./static/js/main.dc339919.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.434f6dc3.css",
-    "static/js/main.9a1dc435.js"
+    "static/css/main.4e0d4ee6.css",
+    "static/js/main.dc339919.js"
   ]
 }
