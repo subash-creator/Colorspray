@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.f363d948.css",
-    "main.js": "./static/js/main.312a4108.js",
+    "main.css": "./static/css/main.70cc3c17.css",
+    "main.js": "./static/js/main.4d351799.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
     "static/media/section1bg.jpg": "./static/media/section1bg.4788bd525efaaa51303a.jpg",
-    "static/media/section3bg.png": "./static/media/section3bg.99bebae3051a5846298e.png",
     "static/media/Drone.png": "./static/media/Drone.3fa069eb7d166a678e7d.png",
     "static/media/Drone1.png": "./static/media/Drone1.ad89232b9ea0b9dd2122.png",
     "static/media/Colorown Spray Logo.png": "./static/media/Colorown Spray Logo.1381467604141d046f47.png",
@@ -15,12 +14,12 @@
     "static/media/battle_tested_icon 1.svg": "./static/media/battle_tested_icon 1.235a40e310ad9afd08cad1f91d83a7a1.svg",
     "static/media/safer_icon 1.svg": "./static/media/safer_icon 1.407e70238b1748d2585ac8074b18f8fe.svg",
     "index.html": "./index.html",
-    "main.f363d948.css.map": "./static/css/main.f363d948.css.map",
-    "main.312a4108.js.map": "./static/js/main.312a4108.js.map",
+    "main.70cc3c17.css.map": "./static/css/main.70cc3c17.css.map",
+    "main.4d351799.js.map": "./static/js/main.4d351799.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f363d948.css",
-    "static/js/main.312a4108.js"
+    "static/css/main.70cc3c17.css",
+    "static/js/main.4d351799.js"
   ]
 }
