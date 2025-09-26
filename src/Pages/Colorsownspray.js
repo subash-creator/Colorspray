@@ -67,12 +67,13 @@ export default function Colorsownspray() {
                 <div className="color-section-three-content">
                     <div className="video-responsive">
                         <iframe
-                            src="https://www.youtube.com/embed/qqqm14NKLYU?si=c3fcGUJDbLeTTRCO"
+                            src="https://www.youtube.com/embed/qqqm14NKLYU?rel=0&si=c3fcGUJDbLeTTRCO"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
                         ></iframe>
+
                     </div>
                 </div>
             </section>
