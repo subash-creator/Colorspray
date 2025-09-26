@@ -31,22 +31,22 @@ export default function MainLanding() {
 
         <div className="icon-row">
           <div className="icon-box">
-            <img src={saferIcon} alt="Safer" />
+            <img src={saferIcon} alt="Safer" loading="lazy" />
             <h2>Safer</h2>
           </div>
 
           <div className="icon-box">
-            <img src={fasterIcon} alt="Faster" />
+            <img src={fasterIcon} alt="Faster" loading="lazy"/>
             <h2>Faster</h2>
           </div>
 
           <div className="icon-box">
-            <img src={aiSmartIcon} alt="AI Powered" />
+            <img src={aiSmartIcon} alt="AI Powered" loading="lazy" />
             <h2>AI-Powered</h2>
           </div>
 
           <div className="icon-box">
-            <img src={battleTestedIcon} alt="Field-Tested" />
+            <img src={battleTestedIcon} alt="Field-Tested"  loading="lazy"/>
             <h2>Field-Tested</h2>
           </div>
         </div>

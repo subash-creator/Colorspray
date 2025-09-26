@@ -27,9 +27,9 @@ export default function Colorsownspray() {
             <section className="color-hero">
                 <div className="color-overlay"></div>
                 <div className="color-hero-content">
-                    <img src={logo} alt="Colorown Spray Logo" className="color-hero-logo" />
+                    <img src={logo} alt="Colorown Spray Logo" className="color-hero-logo" loading="lazy" />
                     <h2 className="color-hero-subtitle">Revolutionizing Aerial Painting</h2>
-                    <img src={drone} alt="Spray Drone" className="color-hero-drone" />
+                    <img src={drone} alt="Spray Drone" className="color-hero-drone" loading="lazy" />
                     <button className="color-trial-btn">Trial</button>
                 </div>
             </section>
@@ -72,6 +72,7 @@ export default function Colorsownspray() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
+                            loading="lazy"
                         ></iframe>
 
                     </div>
