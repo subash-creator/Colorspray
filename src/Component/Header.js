@@ -2,8 +2,8 @@ import { useState } from "react";
 import "./Header.css";
 
 
-import logo from "../assets/soaron-logo.png";
-import logob from "../assets/soaron-logob.png";
+import logo from "../assets/soaron-logo.webp";
+import logob from "../assets/soaron-logob.webp";
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
