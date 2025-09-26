@@ -23,7 +23,7 @@ export default function MainLanding() {
       <Header />
 
       {/* Hero + Features in one section */}
-      <section className="hero-section">
+      <section className="main-hero-section">
         <h1>
           Smart Drones for <br /> Painting & Coating <br />
           Cleaning & Crack Repair <br /> on High-Rise Structures.

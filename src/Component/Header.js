@@ -29,7 +29,7 @@ export default function Header() {
           </div>
 
           <nav className="menu-links">
-            <a href="/">Spray</a>
+            <a href="/Colorsownspray">ColorownSpray</a>
             <a href="/roller">Roller</a>
             <a href="/cleanhigh">CleanHigh</a>
             <a href="/story">Story</a>

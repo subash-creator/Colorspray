@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Career from "./Pages/Career";
 import Press from "./Pages/Press";
-//import Colorsownspray from "./Pages/Colorsownspray";
+import Colorsownspray from "./Pages/Colorsownspray";
 import MainLanding from "./Pages/MainLanding";
 function App() {
   return (
@@ -17,6 +17,8 @@ function App() {
 
         {/* Press & Media page */}
         <Route path="/press" element={<Press />} />
+        {/* Colorown Spray page */}
+        <Route path="/Colorsownspray" element={<Colorsownspray />} />
       </Routes>
     </Router>
   );
