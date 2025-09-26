@@ -31,7 +31,7 @@ body {
   content: "";
   position: absolute;
   inset: 0;
-  background: url("../assets/section1bg.jpg") center/cover no-repeat;
+  background: url("../assets/section1bg.webp") center/cover no-repeat;
   transform: scaleX(-1);
   z-index: 0;
 }
