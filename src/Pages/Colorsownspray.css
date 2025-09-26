@@ -1,9 +1,11 @@
 ::-webkit-scrollbar {
   display: none;
 }
+
 html {
   scrollbar-width: none;
 }
+
 body {
   -ms-overflow-style: none;
 }
@@ -86,6 +88,7 @@ body {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
 }
+
 .color-trial-btn:hover {
   background: #f0f0f0;
 }
@@ -185,11 +188,13 @@ body {
 /* SECTION THREE */
 .video-responsive {
   position: relative;
-  padding-bottom: 42%; /* reduced from 56.25% for shorter height */
+  padding-bottom: 42%;
+  /* reduced from 56.25% for shorter height */
   height: 0;
   overflow: hidden;
   width: 90%;
-  margin: 10vh auto; /* centered horizontally with top/bottom space */
+  margin: 10vh auto;
+  /* centered horizontally with top/bottom space */
   border-radius: 10px;
 }
 
@@ -201,6 +206,7 @@ body {
   height: 100%;
   border: 0;
 }
+
 /* RESPONSIVE – Mobile */
 @media (max-width: 768px) {
   .color-hero {
@@ -209,28 +215,33 @@ body {
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .color-hero-content {
     margin-top: 5vh;
   }
+
   .color-hero-logo {
     max-width: 80vw;
     transform: none;
   }
+
   .color-hero-subtitle {
     font-size: clamp(1rem, 4vw, 1.5rem);
     transform: none;
     margin-top: 2vh;
   }
+
   .color-hero-drone {
     max-width: 80vw;
     margin: 5vh auto;
     transform: none;
   }
+
   .color-trial-btn {
-    position: relative;
-    margin: 4vh auto 0 auto;
-    width: clamp(160px, 60%, 220px);
+    bottom: 8vh;
+    width: clamp(180px, 25vw, 230px);
   }
+
   .color-features {
     flex-direction: column;
     padding: 10vh 5%;
@@ -241,23 +252,28 @@ body {
         rgba(0, 0, 0, 0.85) 95%,
         rgba(0, 0, 0, 1) 100%);
   }
+
   .color-features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     order: 2;
   }
+
   .color-features-drone {
     order: 1;
     margin-top: 3vh;
   }
+
   .color-drone-img {
     max-width: 70vw;
     transform: none;
   }
+
   .color-outer-circle {
     width: 60vw;
     height: 60vw;
   }
+
   .color-inner-circle {
     width: 43vw;
     height: 43vw;
@@ -269,24 +285,30 @@ body {
   .color-hero-logo {
     max-width: 90vw;
   }
+
   .color-hero-subtitle {
     font-size: 1rem;
   }
+
   .color-hero-drone {
     max-width: 80vw;
   }
+
   .color-trial-btn {
     width: 150px;
     height: 2.6rem;
     font-size: 0.9rem;
   }
+
   .color-drone-img {
     max-width: 80vw;
   }
+
   .color-outer-circle {
     width: 70vw;
     height: 70vw;
   }
+
   .color-inner-circle {
     width: 50vw;
     height: 50vw;
@@ -298,35 +320,43 @@ body {
   .color-hero {
     height: 80vh;
   }
+
   .color-hero-logo {
     max-width: 50vw;
     transform: translateY(5vh);
   }
+
   .color-hero-subtitle {
     font-size: clamp(1.2rem, 2.5vw, 1.8rem);
     transform: translateY(3vh);
   }
+
   .color-hero-drone {
     max-width: 50vw;
     transform: translate(5vh, -2vh);
   }
+
   .color-trial-btn {
     bottom: 8vh;
     width: clamp(180px, 25vw, 230px);
   }
+
   .color-features {
     flex-direction: row;
     gap: 3vw;
     padding: 6vh 5%;
   }
+
   .color-drone-img {
     max-width: 50vw;
     transform: translate(-3vw, 1vh);
   }
+
   .color-outer-circle {
     width: 50vw;
     height: 50vw;
   }
+
   .color-inner-circle {
     width: 35vw;
     height: 35vw;
