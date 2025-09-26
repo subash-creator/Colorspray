@@ -8,7 +8,7 @@ import Footer from "../Component/Footer";
 import logo from "../assets/Colorown Spray Logo.png";
 import drone from "../assets/Drone.png";
 import drone1 from "../assets/Drone1.png";
-import section3bg from "../assets/section3bg.png";
+
 
 export default function Colorsownspray() {
     return (
@@ -65,9 +65,18 @@ export default function Colorsownspray() {
             {/* Section Three */}
             <section className="color-section-three">
                 <div className="color-section-three-content">
-                    <img src={section3bg} alt="Drone in Action" className="color-section-three-img" />
+                    <div className="video-responsive">
+                        <iframe
+                            src="https://www.youtube.com/embed/qqqm14NKLYU?si=c3fcGUJDbLeTTRCO"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
             </section>
+
 
             <Footer />
         </div>

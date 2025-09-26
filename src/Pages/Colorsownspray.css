@@ -183,13 +183,24 @@ body {
 }
 
 /* SECTION THREE */
-.color-section-three-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+.video-responsive {
+  position: relative;
+  padding-bottom: 42%; /* reduced from 56.25% for shorter height */
+  height: 0;
+  overflow: hidden;
+  width: 90%;
+  margin: 10vh auto; /* centered horizontally with top/bottom space */
+  border-radius: 10px;
 }
 
+.video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
 /* RESPONSIVE – Mobile */
 @media (max-width: 768px) {
   .color-hero {
