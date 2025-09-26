@@ -20,7 +20,10 @@ export default function Colorsownspray() {
                     content="Soaron Aerospace Innovations – Revolutionizing aerial painting with Colorown Spray drones."
                 />
                 <link rel="preload" as="image" href="../assets/section1bg.webp" />
+                <link rel="preload" as="image" href={require("../assets/Colorown Spray Logo.png")} />
                 <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
 
             </Helmet>
 
