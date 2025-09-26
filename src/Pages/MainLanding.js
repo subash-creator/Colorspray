@@ -13,7 +13,7 @@ export default function MainLanding() {
   return (
     <div className="main-landing-container">
       <Helmet>
-        <title>Soaron Aerospace</title>
+        <title>Soaron </title>
         <meta
           name="description"
           content="Soaron Aerospace Innovations – Revolutionizing high-rise maintenance with AI-powered drones for painting, coating, cleaning, and crack repair."
