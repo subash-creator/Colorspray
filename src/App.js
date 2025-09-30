@@ -14,6 +14,9 @@ import Privacypolicy from "./Pages/Privacypolicy";
 import Refundpolicy from "./Pages/Refundpolicy";
 import Story from "./Pages/Story";
 import Terms from "./Pages/Terms";
+import Roller from "./Pages/Roller";
+import Cleanhigh from "./Pages/Cleanhigh";
+
 
 function App() {
   return (
@@ -57,6 +60,12 @@ function App() {
 
         {/* Colorown Spray page */}
         <Route path="/colorsownspray" element={<Colorsownspray />} />
+        
+        {/* Roller page */}
+        <Route path="/roller" element={<Roller />} />
+        
+        {/* Clean high page */}
+        <Route path="/cleanhigh" element={<Cleanhigh />} />
       </Routes>
     </Router>
   );
