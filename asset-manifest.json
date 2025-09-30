@@ -1,9 +1,9 @@
 {
   "files": {
-    "main.css": "./static/css/main.2aab94fc.css",
-    "main.js": "./static/js/main.17122b3c.js",
+    "main.css": "./static/css/main.19ae3dec.css",
+    "main.js": "./static/js/main.6680d3eb.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
-    "static/media/section1bg.webp": "./static/media/section1bg.abf62083e19ea1e2af22.webp",
+    "static/media/section1bg.webp": "./static/media/section1bg.19caae1dfe859f32b97b.webp",
     "static/media/Drone.webp": "./static/media/Drone.d0d4e262490a73191a11.webp",
     "static/media/Drone1.webp": "./static/media/Drone1.a1b79e9e0f76f1e4ec77.webp",
     "static/media/Colorown Spray Logo.webp": "./static/media/Colorown Spray Logo.419a7553c514c53cb852.webp",
@@ -14,12 +14,12 @@
     "static/media/battle_tested_icon 1.svg": "./static/media/battle_tested_icon 1.235a40e310ad9afd08cad1f91d83a7a1.svg",
     "static/media/safer_icon 1.svg": "./static/media/safer_icon 1.407e70238b1748d2585ac8074b18f8fe.svg",
     "index.html": "./index.html",
-    "main.2aab94fc.css.map": "./static/css/main.2aab94fc.css.map",
-    "main.17122b3c.js.map": "./static/js/main.17122b3c.js.map",
+    "main.19ae3dec.css.map": "./static/css/main.19ae3dec.css.map",
+    "main.6680d3eb.js.map": "./static/js/main.6680d3eb.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2aab94fc.css",
-    "static/js/main.17122b3c.js"
+    "static/css/main.19ae3dec.css",
+    "static/js/main.6680d3eb.js"
   ]
 }
