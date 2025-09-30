@@ -11,10 +11,10 @@ export default function Refundpolicy() {
   return (
     <div className="Refundpolicy-container">
       <Helmet>
-        <title>Refund Policy | Soaron Aerospace Innovations</title>
+        <title>Refund Policy | Soaron </title>
         <meta
           name="description"
-          content="Learn about the refund policy of Soaron Aerospace Innovations. Refund Policy page coming soon!"
+          content="Learn about the refund policy of Soaron Aerospace Innovations."
         />
         <meta
           name="keywords"

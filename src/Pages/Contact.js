@@ -11,10 +11,10 @@ export default function Contact() {
   return (
     <div className="Contact-container">
       <Helmet>
-        <title>Contact Us | Soaron Aerospace Innovations</title>
+        <title>Contact Us | Soaron </title>
         <meta
           name="description"
-          content="Get in touch with Soaron Aerospace Innovations. Our contact page is coming soon – stay tuned!"
+          content="Get in touch with Soaron Aerospace Innovations."
         />
         <meta name="keywords" content="contact, Soaron Aerospace, inquiry, drones, aerospace" />
       </Helmet>

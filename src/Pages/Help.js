@@ -11,10 +11,10 @@ export default function Help() {
   return (
     <div className="Help-container">
       <Helmet>
-        <title>Help & Support | Soaron Aerospace Innovations</title>
+        <title>Help & Support | Soaron </title>
         <meta
           name="description"
-          content="Need help? The Help & Support page of Soaron Aerospace Innovations is coming soon. Stay tuned!"
+          content="Need help? The Help & Support page of Soaron Aerospace Innovations."
         />
         <meta name="keywords" content="help, support, Soaron Aerospace, FAQs, customer service" />
       </Helmet>

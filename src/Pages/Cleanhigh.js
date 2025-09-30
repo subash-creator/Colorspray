@@ -5,16 +5,15 @@ import "./Cleanhigh.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
-import rocket from "../assets/rocket.png"; // reuse same rocket image or replace with drone icon if available
-
+import rocket from "../assets/rocket.png"; 
 export default function Cleanhigh() {
   return (
     <div className="Cleanhigh-container">
       <Helmet>
-        <title>CleanHigh Drone | Soaron Aerospace Innovations</title>
+        <title>CleanHigh Drone | Soaron </title>
         <meta
           name="description"
-          content="Discover our CleanHigh drone for high-altitude cleaning. Page coming soon!"
+          content="Discover our CleanHigh drone for high-altitude cleaning."
         />
         <meta
           name="keywords"

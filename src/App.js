@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Pages
 import MainLanding from "./Pages/MainLanding";
 import Colorsownspray from "./Pages/Colorsownspray";
-import ComingSoon from "./Pages/ComingSoon";
 import Career from "./Pages/Career";
 import Press from "./Pages/Press";
 import Contact from "./Pages/Contact";
@@ -25,8 +24,6 @@ function App() {
         {/* Landing Page */}
         <Route path="/" element={<MainLanding />} />
 
-        {/* Coming Soon / Placeholder Page */}
-        <Route path="/comingsoon" element={<ComingSoon />} />
 
         {/* Careers */}
         <Route path="/career" element={<Career />} />

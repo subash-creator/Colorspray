@@ -11,10 +11,10 @@ export default function Privacypolicy() {
   return (
     <div className="Privacypolicy-container">
       <Helmet>
-        <title>Privacy Policy | Soaron Aerospace Innovations</title>
+        <title>Privacy Policy | Soaron </title>
         <meta
           name="description"
-          content="Learn about how Soaron Aerospace Innovations handles your privacy and data. Privacy Policy page coming soon!"
+          content="Learn about how Soaron Aerospace Innovations handles your privacy and data."
         />
         <meta
           name="keywords"

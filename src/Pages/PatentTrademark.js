@@ -11,10 +11,10 @@ export default function PatentTrademark() {
   return (
     <div className="PatentTrademark-container">
       <Helmet>
-        <title>Patent & Trademark | Soaron Aerospace Innovations</title>
+        <title>Patent & Trademark | Soaron </title>
         <meta
           name="description"
-          content="Explore patents and trademarks by Soaron Aerospace Innovations. This page is coming soon!"
+          content="Explore patents and trademarks by Soaron Aerospace Innovations."
         />
         <meta
           name="keywords"

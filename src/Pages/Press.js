@@ -11,10 +11,10 @@ export default function Press() {
   return (
     <div className="Press-container">
       <Helmet>
-        <title>Press | Soaron Aerospace Innovations</title>
+        <title>Press | Soaron </title>
         <meta
           name="description"
-          content="Stay updated with the latest news and press releases from Soaron Aerospace Innovations. Press page coming soon!"
+          content="Stay updated with the latest news and press releases from Soaron Aerospace Innovations."
         />
         <meta
           name="keywords"

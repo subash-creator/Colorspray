@@ -11,10 +11,10 @@ export default function Partner() {
   return (
     <div className="Partner-container">
       <Helmet>
-        <title>Partner With Us | Soaron Aerospace Innovations</title>
+        <title>Partner With Us | Soaron </title>
         <meta
           name="description"
-          content="Collaborate with Soaron Aerospace Innovations. Our Partner With Us page is coming soon. Stay tuned for partnership opportunities!"
+          content="Collaborate with Soaron Aerospace Innovations."
         />
         <meta name="keywords" content="partner, partnership, Soaron Aerospace, business collaboration, drones, aerospace" />
       </Helmet>
