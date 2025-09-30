@@ -9,12 +9,14 @@ export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <> 
-    <img src={logob} alt="" style={{ display: "none" }} />
+    <>
+      <img src={logob} alt="" style={{ display: "none" }} />
       <header className={`header ${menuOpen ? "menu-open" : ""}`}>
         {!menuOpen && (
           <>
-            <img src={logo} alt="Soaron Logo" className="logo-img" />
+            <a href="/">
+              <img src={logo} alt="Soaron Logo" className="logo-img" />
+            </a>
             <button className="menu-btn" onClick={() => setMenuOpen(true)}>
               Menu <span className="menu-icon">☰</span>
             </button>
@@ -25,7 +27,9 @@ export default function Header() {
       {menuOpen && (
         <div className="menu-overlay">
           <div className="menu-logo">
-            <img src={logob} alt="Soaron Logo" />
+            <a href="/">
+              <img src={logob} alt="Soaron Logo" />
+            </a>
           </div>
 
           <nav className="menu-links">
@@ -43,7 +47,7 @@ export default function Header() {
             ✕
           </button>
 
-          
+
         </div>
       )}
     </>
