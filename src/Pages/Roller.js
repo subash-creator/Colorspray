@@ -11,10 +11,10 @@ export default function Roller() {
   return (
     <div className="Roller-container">
       <Helmet>
-        <title>Roller Drone | Soaron Aerospace Innovations</title>
+        <title>Roller Drone | Soaron </title>
         <meta
           name="description"
-          content="Learn about our innovative Roller drone for painting. Page coming soon!"
+          content="Learn about our innovative Roller drone for painting."
         />
         <meta
           name="keywords"
