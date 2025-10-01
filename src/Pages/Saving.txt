@@ -1,190 +1,100 @@
-
-/* Hide Scrollbars */
-::-webkit-scrollbar {
-  display: none;
-}
-html {
-  scrollbar-width: none;
-}
-body {
-  -ms-overflow-style: none;
-  margin: 0;
-  padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-/* Main Container */
-.main-landing-container {
-  background: #000;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-/* Hero Section */
-.section-1 {
-  position: relative;
-  height: 84vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start; 
-  padding: 0 6.7%;
-  background: #000;
-  text-align: left;
-}
-
-.section-1 h1 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: clamp(2rem, 4vw, 3rem);
-  line-height: 1.3;
-  margin-bottom: 1rem;
-}
-
-.section-1 p {
-  font-size: clamp(1rem, 1.5vw, 1.2rem);
-  font-weight: 500;
-  color: #ddd;
-  max-width: 700px;
-}
-
-/* Features Section */
-.section-4 {
-  padding: 70px 6.7%;
-  background: #fff;
-  color: #000;
-  text-align: left;
-}
-
-.features-list {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-
-.feature-row {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-.feature-row img {
-  width: 60px;
-  height: 60px;
-  padding: 12px;
-  background: #000;
-  border-radius: 12px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.feature-text h2 {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 22px;
-  line-height: 130%;
-  letter-spacing: -0.01em;
-  color: #111827;
-  margin-bottom: 6px;
-}
-
-.feature-text p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.5;
-  margin: 0;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .section-1 {
-    align-items: center;
-    text-align: center;
-  }
-  .section-1 p {
-    text-align: center;
-  }
-  .features-list {
-    gap: 25px;
-  }
-}
- 
-
-
-
- main landing.js 
-
- import React from "react";
+import React from "react";
 import { Helmet } from "react-helmet-async";
-import "./MainLanding.css";
+import "./Contact.css";
 
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
-import aiSmartIcon from "../assets/ai_smart_icon 1.svg";
-import battleTestedIcon from "../assets/battle_tested_icon 1.svg";
-import fasterIcon from "../assets/faster_icon 1.svg";
-import saferIcon from "../assets/safer_icon 1.svg";
 
-export default function MainLanding() {
+import rocket from "../assets/rocket.png";
+
+export default function Contact() {
   return (
-    <div className="main-landing-container">
+    <div className="Contact-container">
       <Helmet>
-        <title>Soaron Aerospace</title>
+        <title>Contact Us | Soaron </title>
         <meta
           name="description"
-          content="Soaron Aerospace Innovations – Revolutionizing high-rise maintenance with AI-powered drones for painting, coating, cleaning, and crack repair."
+          content="Get in touch with Soaron Aerospace Innovations."
         />
+        <meta name="keywords" content="contact, Soaron Aerospace, inquiry, drones, aerospace" />
       </Helmet>
 
       <Header />
 
-      {/* Hero Section */}
-      <section className="section-1">
-        <center><h1>
-          Smart Drones for <br /> Painting & Coating <br />
-          Cleaning & Crack Repair <br /> on High-Rise Structures.
-        </h1></center>
-    
-      </section>
-
-      {/* Features Section */}
-      <section className="section-4">
-        <div className="features-list">
-          <div className="feature-row">
-            <img src={saferIcon} alt="Safer" />
-            <div className="feature-text">
-              <h2>Safer</h2>
-              
-            </div>
-          </div>
-
-          <div className="feature-row">
-            <img src={fasterIcon} alt="Faster" />
-            <div className="feature-text">
-              <h2>Faster</h2>
-             
-            </div>
-          </div>
-
-          <div className="feature-row">
-            <img src={aiSmartIcon} alt="AI Powered" />
-            <div className="feature-text">
-              <h2>AI-Powered</h2>
-            </div>
-          </div>
-
-          <div className="feature-row">
-            <img src={battleTestedIcon} alt="Battle Tested" />
-            <div className="feature-text">
-              <h2>Field-Tested</h2>
-            </div>
-          </div>
-        </div>
-      </section>
+      <main className="Contact-main-content">
+        <img
+          src={rocket}
+          alt="Rocket illustration for contact page coming soon"
+          className="rocket-img"
+        />
+        <h1 className="Contact-main-title">CONTACT PAGE COMING SOON</h1>
+        <p className="Contact-subtitle">Stay tuned — we’ll be ready to connect with you soon!</p>
+      </main>
 
       <Footer />
     </div>
   );
 }
+
+
+
+.Contact-container {
+  background: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.Contact-main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Floating Rocket Animation */
+.rocket-img {
+  width: 110px;
+  margin-bottom: 14px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.Contact-main-title {
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.Contact-subtitle {
+  font-size: 16px;
+  margin-top: 0;
+  color: #fff;
+  opacity: 0.9;
+}
+
+/* ========== Mobile Responsive ========== */
+@media (max-width: 768px) {
+  .Contact-main-title {
+    font-size: 24px;
+  }
+
+  .Contact-subtitle {
+    font-size: 14px;
+  }
+}
+
+
