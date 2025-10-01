@@ -12,7 +12,7 @@
   display: flex;
   justify-content: center;
   align-items: stretch;
-  padding: 20px;
+  padding: 40px;
 }
 
 .pin-icon {
@@ -96,11 +96,12 @@
 .email-section {
   margin-top: 30px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
   position: relative;
   width: 100% ;
   min-height: 20vh;
 }
+
 
 .email-block {
   display: flex;
@@ -110,7 +111,8 @@
   gap: 10px;
   color: #fff;
   margin-top: 10px;
-
+  position: relative;
+  z-index: 1; /* keeps text above circles */
 }
 
 .email-block a {
@@ -140,6 +142,7 @@
   position: absolute;
   border-radius: 50%;
   background: #FFFFFF1F;
+    z-index: 0;
 ;
 }
 

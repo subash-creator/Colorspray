@@ -79,16 +79,18 @@ export default function Contact() {
             </div>
 
           </div>
+          
 
           {/* Right: Map */}
           <div className="contact-map">
             <iframe
               title="Soaron Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.555555555555!2d78.44224931525149!3d17.403321006123033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9736c1d5f7e9%3A0x9c2dd5df12345678!2sMasab%20Tank%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1696077742724!5m2!1sen!2sin"
+               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.25176871577!2d78.40804555!3d17.4123487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb97137178878b%3A0x411871eeffa91e74!2sSoaron!5e0!3m2!1sen!2sin!4v1759305470054!5m2!1sen!2sin" 
               width="100%"
               height="100%"
               style={{ border: 0 }}
               allowFullScreen=""
+               referrerpolicy="no-referrer-when-downgrade"
               loading="lazy"
             ></iframe>
           </div>
