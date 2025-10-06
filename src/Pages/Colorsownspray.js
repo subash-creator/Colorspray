@@ -21,8 +21,8 @@ export default function Colorsownspray() {
                 />
                 <link rel="preload" as="image" href="../assets/section1bg.webp" />
                 <link rel="preload" as="image" href={require("../assets/Colorown Spray Logo.webp")} />
-                  <link rel="preload" as="image" href={require("../assets/Drone.webp")} />
-                    <link rel="preload" as="image" href={require("../assets/Drone1.webp")} />
+                <link rel="preload" as="image" href={require("../assets/Drone.webp")} />
+                <link rel="preload" as="image" href={require("../assets/Drone1.webp")} />
                 <link rel="preload" as="font" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
@@ -76,13 +76,13 @@ export default function Colorsownspray() {
                     <div className="video-responsive">
                         <iframe
                             loading="lazy"
-                            src="https://www.youtube.com/embed/qqqm14NKLYU?rel=0&si=c3fcGUJDbLeTTRCO"
+                            src="https://www.youtube.com/embed/qqqm14NKLYU?rel=0&si=c3fcGUJDbLeTTRCO&autoplay=1&mute=1"
                             title="YouTube video player"
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             allowFullScreen
-
                         ></iframe>
+
 
                     </div>
                 </div>
