@@ -15,6 +15,7 @@ body {
   color: #fff;
   display: flex;
   flex-direction: column;
+  min-height: 95vh;
   text-align: center;
 }
 
@@ -26,6 +27,7 @@ body {
   justify-content: center; /* vertical center */
   align-items: center;     /* horizontal center */
   padding: 50px 6.7%;
+
 }
 
 .main-hero-section h1 {
