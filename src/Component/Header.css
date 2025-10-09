@@ -1,16 +1,29 @@
 /* Header */
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* ensure header spans full width */
+  z-index: 1000; /* ensure header is above other elements */
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 15px 100px;
   gap: 40px;
   min-height: 54px;
+  background: #000; /* ensure background when fixed */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.07);
+  box-sizing: border-box;
 }
-
+body{
+  margin-top: 84px; 
+}
 .header.menu-open {
   background: #000;
+  min-height: 84px; 
+  transition: all 0.3s ease; 
 }
+
 
 .logo-img,
 .menu-logo img {
@@ -35,7 +48,7 @@
 
 /* Menu Overlay */
 .menu-overlay {
-  position: absolute;
+  position: fixed;
   top: 1%;
   left: 6.7%;
   width: 82.5%;
