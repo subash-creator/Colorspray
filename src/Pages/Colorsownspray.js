@@ -38,7 +38,14 @@ export default function Colorsownspray() {
                     <img src={logo} alt="Colorown Spray Logo" className="color-hero-logo" loading="lazy" />
                     <h2 className="color-hero-subtitle">Revolutionizing Aerial Painting</h2>
                     <img src={drone} alt="Spray Drone" className="color-hero-drone" loading="lazy" />
-                    <button className="color-trial-btn">Trial</button>
+                    <a
+                        href="https://docs.google.com/forms/d/1aErGeixyLj-941LOMSLTLKBZ15sKYI9Lv2bt9ZbUW-Y/edit?usp=drivesdk"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <button className="color-trial-btn">Trial</button>
+                    </a>
+
                 </div>
             </section>
 
@@ -64,8 +71,7 @@ export default function Colorsownspray() {
                 </div>
 
                 <div className="color-features-drone">
-                    <div className="color-outer-circle"></div>
-                    <div className="color-inner-circle"></div>
+                   
                     <img src={drone1} alt="Feature Drone" className="color-drone-img" loading="lazy" />
                 </div>
             </section>

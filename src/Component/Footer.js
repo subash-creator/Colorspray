@@ -1,4 +1,5 @@
-import { FaTwitter, FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaYoutube, FaLinkedinIn } from "react-icons/fa";
 import "./Footer.css"; // optional styling
 
 export default function Footer() {
@@ -21,10 +22,10 @@ export default function Footer() {
               href="https://x.com/SoaronOfficial?t=fy9JVK27CGZbAdIPk-Koew&s=08"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Twitter"
-              className="icon twitter-icon"
+              aria-label="X (formerly Twitter)"
+              className="icon x-icon"
             >
-              <FaTwitter />
+              <FaXTwitter />
             </a>
 
             <a
@@ -73,7 +74,7 @@ export default function Footer() {
         </div>
 
         <div className="footer-copy">
-          <p className="copyright">© 2025 Soaron. All Rights Reserved</p>
+          <p className="copyright">© 2025 Soaron. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
