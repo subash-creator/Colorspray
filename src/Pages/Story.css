@@ -1,58 +1,144 @@
 .Story-container {
-  background: #000;
+  background-color: #000;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.Story-main-content {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* ===== Hero Section ===== */
+.story-hero {
+  background-color: #000;
   text-align: center;
+  padding: 120px 20px 100px;
+}
+.story-hero h1 {
+  font-size: 2.5rem;
+  line-height: 1.4;
+  font-weight: 700;
+}
+.story-hero h1 span {
+  color: #ffffff;
+}
+.story-hero p {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #ccc;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.hero-rocket {
+  margin-top: 40px;
+  width: 100px;
 }
 
-/* Floating Rocket Animation */
-.rocket-img {
-  width: 110px;
-  margin-bottom: 14px;
-  animation: float 3s ease-in-out infinite;
+/* ===== Founder Section ===== */
+.founder-section {
+  background: #fff;
+  color: #000;
+  padding: 100px 10%;
+}
+.founder-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.founder-text {
+  flex: 1 1 55%;
+}
+.founder-text h2 {
+  margin-bottom: 20px;
+}
+.founder-text p {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+}
+.founder-image {
+  flex: 1 1 35%;
+  text-align: right;
+}
+.founder-image img {
+  width: 280px;
+  border-radius: 10px;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
+/* ===== Partnership Section ===== */
+.partnership-section {
+  background: #0d0d0d;
+  text-align: center;
+  padding: 100px 20px;
+}
+.partnership-section h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+.partnership-section p {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #ccc;
+}
+.partner-logos {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+.partner-logos img {
+  height: 100px;
 }
 
-.Story-main-title {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
+/* ===== Board Section ===== */
+.board-section {
+  background: #fff;
+  color: #000;
+  text-align: center;
+  padding: 100px 20px;
+}
+.board-cards {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+.board-card {
+  background: #f9f9f9;
+  padding: 40px 30px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.board-card .avatar {
+  width: 100px;
+  height: 100px;
+  background: #ddd;
+  border-radius: 50%;
+  margin: 0 auto 20px;
 }
 
-.Story-subtitle {
-  font-size: 16px;
-  margin-top: 0;
-  color: #fff;
-  opacity: 0.9;
+/* ===== Team Section ===== */
+.team-section {
+  background: #000;
+  text-align: center;
+  padding: 100px 20px;
 }
-
-/* ========== Mobile Responsive ========== */
-@media (max-width: 768px) {
-  .Story-main-title {
-    font-size: 24px;
-  }
-
-  .Story-subtitle {
-    font-size: 14px;
-  }
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+.team-card {
+  background: #111;
+  border-radius: 15px;
+  padding: 30px 20px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+}
+.team-card .avatar {
+  width: 100px;
+  height: 100px;
+  background: #222;
+  border-radius: 50%;
+  margin: 0 auto 20px;
 }

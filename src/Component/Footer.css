@@ -99,6 +99,7 @@
   .footer-top,
   .footer-bottom {
     display: contents;
+    text-align: left;
   }
 
   .footer-links {
