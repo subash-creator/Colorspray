@@ -87,11 +87,11 @@ export default function Story() {
         <section className="partnership-section">
           <h2>Our Partnerships</h2>
           <p>
-           Soaron’s innovation journey is backed by strong academic
-            and institutional collaborations. We are proudly incubated 
-            at IIT Madras Incubation Cell and have signed a strategic 
+            Soaron’s innovation journey is backed by strong academic
+            and institutional collaborations. We are proudly incubated
+            at IIT Madras Incubation Cell and have signed a strategic
             MoU with the Institute of Aeronautical Engineering (IARE)
-             to advance drone technology for construction.
+            to advance drone technology for construction.
           </p>
           <div className="partner-logos">
             <img src={partner1} alt="Partner 1" />
@@ -109,14 +109,14 @@ export default function Story() {
               <h3>Shariq Ahmed</h3>
               <h4>Founder & Chief Executive Officer</h4>
               <p>Visionary leader driving innovation in drone
-                 technology and aerial systems. Passionate about pushing</p>
+                technology and aerial systems. Passionate about pushing</p>
             </div>
             <div className="board-card">
               <div className="avatar"></div>
               <h3>Moeeah Muneendra</h3>
               <h4>Board Member</h4>
               <p>Providing strategic guidance and oversight
-                 for our growth initiatives and long-term vision.</p>
+                for our growth initiatives and long-term vision.</p>
             </div>
           </div>
         </section>
@@ -124,23 +124,57 @@ export default function Story() {
         {/* ===== 5. Our Team ===== */}
         <section className="team-section">
           <h2>Our Team</h2>
-          <p>Meet the passionate individuals behind Soaron’s success.</p>
+          <h5>Meet the passionate individuals behind Soaron’s success.</h5>
+
           <div className="team-grid">
             {[
-              "Srikanth",
-              "Abdul Khadarsha",
-              "Veera",
-              "Joseph Raj",
-              "Dineshwaran",
-              "Akla Gino",
-            ].map((name) => (
-              <div key={name} className="team-card">
+              {
+                name: "Srikanth",
+                designation: "Software Engineer",
+                description:
+                  "Building scalable systems and ensuring seamless backend operations.",
+              },
+              {
+                name: "Abdul Khadarsha",
+                designation: "Frontend Developer",
+                description:
+                  "Crafting intuitive user interfaces and enhancing web experiences.",
+              },
+              {
+                name: "Veera",
+                designation: "AI Engineer",
+                description:
+                  "Developing smart algorithms and automation models for drone systems.",
+              },
+              {
+                name: "Joseph Raj",
+                designation: "Embedded Systems Engineer",
+                description:
+                  "Designing efficient hardware-software integrations for aerial solutions.",
+              },
+              {
+                name: "Dineshwaran",
+                designation: "Mechanical Engineer",
+                description:
+                  "Innovating robust drone structures with precision and reliability.",
+              },
+              {
+                name: "Akla Gino",
+                designation: "Product Designer",
+                description:
+                  "Creating aesthetic and functional product experiences for our users.",
+              },
+            ].map((member) => (
+              <div key={member.name} className="team-card">
                 <div className="avatar"></div>
-                <h3>{name}</h3>
+                <h3>{member.name}</h3>
+                <h4>{member.designation}</h4>
+                <p>{member.description}</p>
               </div>
             ))}
           </div>
         </section>
+
       </main>
 
       <Footer />

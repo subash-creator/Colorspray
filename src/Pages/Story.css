@@ -305,27 +305,102 @@
 
 
 /* ===== Team Section ===== */
+/* ===== Team Section ===== */
 .team-section {
   background: #000;
-  text-align: center;
-  padding: 100px 20px;
+  color: #fff;
+  padding: 100px 10%;
 }
+
+.team-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  margin-bottom: 20px;
+}
+
+.team-section  h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.25; /* more readable than 100% */
+  letter-spacing: 1%;
+  color: #FFFFFF; /* keep your original color */
+  margin-bottom: 60px; /* as in your current CSS */
+
+}
+
+
+/* Grid layout */
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 40px;
+  
 }
+
+/* Team Card */
 .team-card {
-  background: #111;
-  border-radius: 15px;
-  padding: 30px 20px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
+  background: #0d0d0d;
+  border: 1px solid #333;
+  border-radius: 10px;
+  width: 300px;
+  padding: 40px 25px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.team-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Avatar */
 .team-card .avatar {
   width: 100px;
   height: 100px;
   background: #222;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
 }
+
+/* Name */
+.team-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #FFFFFF;
+  margin: 10px 0 6px 0;
+}
+
+
+/* Designation */
+/* Designation */
+.team-card h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+
+/* Description */
+.team-card p  {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; /* Regular */
+  font-style: normal;
+  font-size: 14px;
+  line-height: 100%; /* or 1.2 for readability */
+  letter-spacing: 1%;
+  color: #FFFFFF; /* keep as per your original team card style */
+  margin: 0;
+}
+
