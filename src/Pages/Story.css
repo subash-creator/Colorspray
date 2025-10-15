@@ -11,53 +11,151 @@
   padding: 120px 20px 100px;
 }
 .story-hero h1 {
-  font-size: 2.5rem;
-  line-height: 1.4;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
+  font-size: 64px;
+  line-height: 84px;
+  letter-spacing: 1%;
+  text-align: center;
+  color: #ffffff;
+  margin: 0 auto;
 }
+
 .story-hero h1 span {
   color: #ffffff;
 }
-.story-hero p {
-  margin-top: 20px;
-  font-size: 1.1rem;
-  color: #ccc;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+.hero-line {
+  width: 90vh;
+  height: 2px;
+  background: #ffffff;
+  border: none;
+  border-radius: 2px;
+  margin: 25px auto;
+  opacity: 0.8;
 }
+
+.story-hero p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  letter-spacing: 1%;
+  text-align: center;
+  color: #ccc;
+  max-width: 150vh;
+  margin: 0 auto 0;
+}
+
 .hero-rocket {
   margin-top: 40px;
   width: 100px;
 }
-
 /* ===== Founder Section ===== */
 .founder-section {
   background: #fff;
   color: #000;
   padding: 100px 10%;
 }
+
 .founder-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  gap: 40px;
 }
+
 .founder-text {
   flex: 1 1 55%;
 }
+
 .founder-text h2 {
-  margin-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 1%;
+  color: #000;
+  margin-bottom: 30px;
 }
-.founder-text p {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: #333;
+
+/* ===== Message Box ===== */
+.founder-message-box {
+  background: #fffdf6;
+  padding: 40px;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 }
+
+.founder-message-box p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 32px;
+  color: #222;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Quotes */
+.quote-start,
+.quote-end {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  display: block;
+}
+
+.quote-start {
+  margin-bottom: 10px;
+}
+
+.quote-end {
+  text-align: right;
+  margin-top: 10px;
+}
+
+/* Founder Info */
+.founder-info {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  gap: 15px;
+}
+
+.vertical-line {
+  width: 4px;
+  height: 45px;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.founder-info h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #000;
+  margin: 0;
+}
+
+.founder-info p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #555;
+  margin: 3px 0 0;
+}
+
+/* ===== Image Side ===== */
 .founder-image {
   flex: 1 1 35%;
   text-align: right;
+  display: flex;
+  justify-content: center;
 }
+
 .founder-image img {
   width: 280px;
   border-radius: 10px;
@@ -69,15 +167,29 @@
   text-align: center;
   padding: 100px 20px;
 }
-.partnership-section h2 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.partnership-section  h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 40px;
 }
+
 .partnership-section p {
-  max-width: 800px;
-  margin: 0 auto 50px;
-  color: #ccc;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0;
+  text-align: center;
+  color: #FFFFFF;
+  max-width: 1200px;
+  margin: 0 auto 40px;
 }
+
 .partner-logos {
   display: flex;
   justify-content: center;
@@ -86,6 +198,8 @@
 }
 .partner-logos img {
   height: 100px;
+  border-radius: 10px;
+
 }
 
 /* ===== Board Section ===== */
@@ -95,6 +209,29 @@
   text-align: center;
   padding: 100px 20px;
 }
+.board-section h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 64px;
+  letter-spacing: 1%;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.board-section p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #121212;
+;
+  max-width: 900px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
 .board-cards {
   display: flex;
   justify-content: center;

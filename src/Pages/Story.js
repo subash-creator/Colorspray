@@ -4,10 +4,9 @@ import "./Story.css";
 import Header from "../Component/Header";
 import Footer from "../Component/Footer";
 
-import rocket from "../assets/rocket.png";
 import founderImg from "../assets/rocket.png"; // placeholder
-import partner1 from "../assets/rocket.png";
-import partner2 from "../assets/rocket.png";
+import partner1 from "../assets/partner1.png";
+import partner2 from "../assets/partner2.png";
 
 export default function Story() {
   return (
@@ -33,46 +32,66 @@ export default function Story() {
             <h1>
               Transforming Industries Through <br />
               <span>Autonomous Aerial Innovation</span>
+
             </h1>
+            <hr className="hero-line" />
             <p>
-              From advanced flying systems to reliable on-ground data services —
-              we’re building the future of intelligent aerial ecosystems for
-              faster, safer, and smarter operations.
+              From advanced spray painting systems to robotic arm
+              solutions and drone rental services—we're building </p>
+            <p>the future of intelligent aerial automation for safer,
+              faster, and more efficient operations.
             </p>
           </div>
-          <img src={rocket} alt="rocket" className="hero-rocket" />
+
         </section>
 
         {/* ===== 2. Founder Message ===== */}
+        {/* ===== 2. Founder Message ===== */}
         <section className="founder-section">
           <div className="founder-content">
+            {/* Left side - Text */}
             <div className="founder-text">
               <h2>Founder Message</h2>
-              <p>
-                This journey started with a belief that innovation can make
-                aerial technology accessible to everyone. From small projects to
-                large-scale deployments, every milestone we’ve achieved has
-                strengthened our vision — to bring the sky closer through
-                simplicity, connectivity, and intelligence. I’m incredibly proud
-                of our team’s dedication and the partnerships that keep pushing
-                Soaron forward every day.
-              </p>
-              <h4>— Shadab Ahmad</h4>
+
+              <div className="founder-message-box">
+                <span className="quote-start">“</span>
+                <p>
+                  This journey started with a belief: that innovation isn't just about technology it's
+                  about impact. From our earliest sketches to high-altitude trials, we've been guided
+                  by the drive to make intelligent aerial systems more accessible, powerful, and purposeful.
+                  Soaron is not just a company. It's a commitment to pushing boundaries and elevating ideas—quite literally.
+                  This is just the beginning.
+                  Thank you for being a part of our story.
+                </p>
+                <span className="quote-end">”</span>
+
+                <div className="founder-info">
+                  <div className="vertical-line"></div>
+                  <div>
+                    <h4>Shariq Ahmed</h4>
+                    <p>Founder & CEO</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            {/* Right side - Image */}
             <div className="founder-image">
               <img src={founderImg} alt="Founder" />
             </div>
           </div>
         </section>
 
+
         {/* ===== 3. Partnerships ===== */}
         <section className="partnership-section">
           <h2>Our Partnerships</h2>
           <p>
-            Soaron’s innovation journey is backed by academic and industrial
-            collaborations. We are proudly associated with institutions and
-            organizations that share our vision of autonomous aerial technology
-            for tomorrow.
+           Soaron’s innovation journey is backed by strong academic
+            and institutional collaborations. We are proudly incubated 
+            at IIT Madras Incubation Cell and have signed a strategic 
+            MoU with the Institute of Aeronautical Engineering (IARE)
+             to advance drone technology for construction.
           </p>
           <div className="partner-logos">
             <img src={partner1} alt="Partner 1" />
