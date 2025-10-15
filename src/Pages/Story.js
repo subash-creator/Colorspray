@@ -131,37 +131,37 @@ export default function Story() {
           <div className="team-grid">
             {[
               {
-                name: "Srikanth",
+                name: "Abdul Shadaab",
                 designation: "Software Engineer",
                 description:
                   "Building scalable systems and ensuring seamless backend operations.",
               },
               {
-                name: "Abdul Khadarsha",
+                name: "Srishivanth",
                 designation: "Frontend Developer",
                 description:
                   "Crafting intuitive user interfaces and enhancing web experiences.",
               },
               {
-                name: "Veera",
+                name: "Joseph Raj",
                 designation: "AI Engineer",
                 description:
                   "Developing smart algorithms and automation models for drone systems.",
               },
               {
-                name: "Joseph Raj",
+                name: "Devaselvam",
                 designation: "Embedded Systems Engineer",
                 description:
                   "Designing efficient hardware-software integrations for aerial solutions.",
               },
               {
-                name: "Dineshwaran",
+                name: "Aziz Gida",
                 designation: "Mechanical Engineer",
                 description:
                   "Innovating robust drone structures with precision and reliability.",
               },
               {
-                name: "Akla Gino",
+                name: "Viiifi",
                 designation: "Product Designer",
                 description:
                   "Creating aesthetic and functional product experiences for our users.",
