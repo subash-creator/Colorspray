@@ -203,12 +203,15 @@
 }
 
 /* ===== Board Section ===== */
+/* ===== Board Section ===== */
 .board-section {
   background: #fff;
   color: #000;
-  text-align: center;
-  padding: 100px 20px;
+  text-align: left; /* ⬅ Align everything to the left */
+  padding: 100px 10%;
 }
+
+/* Section Heading */
 .board-section h2 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -216,43 +219,90 @@
   line-height: 64px;
   letter-spacing: 1%;
   color: #000;
-  margin-bottom: 40px;
-  text-align: center;
+  margin-bottom: 15px;
+  text-align: left;
 }
-.board-section p {
+
+/* Subheading paragraph */
+.board-section > p {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: 1%;
   color: #121212;
-;
   max-width: 900px;
-  margin: 0 auto 40px;
-  text-align: center;
+  margin-bottom: 50px;
+  text-align: left;
 }
 
+/* Board Cards Container */
 .board-cards {
   display: flex;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 40px;
+  justify-content: flex-start; /* ⬅ Push cards to the left */
+  gap: 30px;
   flex-wrap: wrap;
 }
+
+/* Individual Board Card */
 .board-card {
-  background: #f9f9f9;
-  padding: 40px 30px;
-  border-radius: 15px;
-  width: 250px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #FFFDF6;
+  border: 1px solid #D2D2D2;
+
+  width: 300px;
+  padding: 40px 25px;
+  text-align: left; /* ⬅ Keep text inside cards left-aligned */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+/* Hover effect (optional) */
+.board-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Avatar */
 .board-card .avatar {
-  width: 100px;
-  height: 100px;
-  background: #ddd;
+  width: 90px;
+  height: 90px;
+  background: #EDEDED;
   border-radius: 50%;
-  margin: 0 auto 20px;
+  margin-bottom: 20px;
 }
+
+/* Name */
+.board-card h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #000;
+  margin: 0 0 8px 0;
+}
+.board-card h4 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #333;
+ 
+}
+
+
+/* Role/Description */
+.board-card p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 1%;
+  color: #121212;
+  margin: 0;
+}
+
 
 /* ===== Team Section ===== */
 .team-section {

@@ -106,13 +106,17 @@ export default function Story() {
           <div className="board-cards">
             <div className="board-card">
               <div className="avatar"></div>
-              <h3>Shadab Ahmad</h3>
-              <p>Founder & CEO</p>
+              <h3>Shariq Ahmed</h3>
+              <h4>Founder & Chief Executive Officer</h4>
+              <p>Visionary leader driving innovation in drone
+                 technology and aerial systems. Passionate about pushing</p>
             </div>
             <div className="board-card">
               <div className="avatar"></div>
               <h3>Moeeah Muneendra</h3>
-              <p>Co-Founder & Director</p>
+              <h4>Board Member</h4>
+              <p>Providing strategic guidance and oversight
+                 for our growth initiatives and long-term vision.</p>
             </div>
           </div>
         </section>
