@@ -404,3 +404,204 @@
   margin: 0;
 }
 
+/* ===== Mobile View (max-width: 768px) ===== */
+@media (max-width: 768px) {
+  /* General */
+  .Story-container {
+    overflow-x: hidden;
+  }
+
+  /* ===== Hero Section ===== */
+  .story-hero {
+    padding: 100px 20px 60px;
+  }
+
+  .story-hero h1 {
+    font-size: 24px;
+    line-height: 34px;
+    text-align: left;
+  }
+
+  .hero-line {
+    width: 100%;
+   
+    margin: 15px auto;
+  }
+
+  .story-hero p {
+    font-size: 14px;
+    line-height: 22px;
+    max-width: 100%;
+    text-align: left;
+    
+  }
+
+  /* ===== Founder Section ===== */
+  .founder-section {
+    padding: 60px 20px;
+  }
+
+  .founder-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .founder-text h2 {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 15px;
+  }
+
+  .founder-message-box {
+    padding: 25px 20px;
+  }
+
+  .founder-message-box p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .quote-start,
+  .quote-end {
+    font-size: 24px;
+  }
+
+  .founder-info {
+    margin-top: 20px;
+  }
+
+  .vertical-line {
+    height: 30px;
+  }
+
+  .founder-info h4 {
+    font-size: 16px;
+  }
+
+  .founder-info p {
+    font-size: 12px;
+  }
+
+  .founder-image {
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .founder-image img {
+    width: 200px;
+  }
+
+  /* ===== Partnerships ===== */
+  .partnership-section {
+    padding: 60px 20px;
+    text-align: left;
+  }
+
+  .partnership-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+     text-align: left;
+  }
+
+  .partnership-section p {
+    font-size: 14px;
+     text-align: left;
+    line-height: 22px;
+  }
+
+  .partner-logos {
+    gap: 10vh;
+    justify-content: flex-start;  
+    padding-left: 5vh;
+  }
+
+  .partner-logos img {
+    height: 70px;
+  }
+
+  /* ===== Board Section ===== */
+  .board-section {
+    padding: 60px 20px;
+  }
+
+  .board-section h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .board-section > p {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 30px;
+  }
+
+  .board-cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .board-card {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .board-card .avatar {
+    width: 70px;
+    height: 70px;
+  }
+
+  .board-card h3 {
+    font-size: 18px;
+  }
+
+  .board-card h4 {
+    font-size: 14px;
+  }
+
+  .board-card p {
+    font-size: 12px;
+  }
+
+  /* ===== Team Section ===== */
+  .team-section {
+    padding: 60px 20px;
+  }
+
+  .team-section h2 {
+    font-size: 22px;
+  }
+
+  .team-section h5 {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .team-card {
+    width: 90%;
+    padding: 25px 20px;
+  }
+
+  .team-card .avatar {
+    width: 80px;
+    height: 80px;
+  }
+
+  .team-card h3 {
+    font-size: 18px;
+  }
+
+  .team-card h4 {
+    font-size: 14px;
+  }
+
+  .team-card p {
+    font-size: 12px;
+  }
+}

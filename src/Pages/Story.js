@@ -37,8 +37,8 @@ export default function Story() {
             <hr className="hero-line" />
             <p>
               From advanced spray painting systems to robotic arm
-              solutions and drone rental services—we're building </p>
-            <p>the future of intelligent aerial automation for safer,
+              solutions and drone rental services—we're building
+              the future of intelligent aerial automation for safer,
               faster, and more efficient operations.
             </p>
           </div>
@@ -93,9 +93,11 @@ export default function Story() {
             MoU with the Institute of Aeronautical Engineering (IARE)
             to advance drone technology for construction.
           </p>
+
           <div className="partner-logos">
-            <img src={partner1} alt="Partner 1" />
             <img src={partner2} alt="Partner 2" />
+            <img src={partner1} alt="Partner 1" />
+
           </div>
         </section>
 
