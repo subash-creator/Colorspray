@@ -1,58 +1,195 @@
+/* General Container */
 .Cleanhigh-container {
-  background: #000;
+  background-color: #000;
   color: #fff;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.Cleanhigh-main-content {
-  flex: 1;
+/* ---------- Hero Section ---------- */
+.cleanhigh-hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  background: url("../assets/cleanhighbg.webp") center/cover no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-/* Floating Rocket Animation */
-.rocket-img {
-  width: 110px;
-  margin-bottom: 14px;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-.Cleanhigh-main-title {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
-}
-
-.Cleanhigh-subtitle {
-  font-size: 16px;
-  margin-top: 0;
   color: #fff;
-  opacity: 0.9;
 }
 
-/* ========== Mobile Responsive ========== */
+.cleanhigh-hero h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 10%;
+  text-transform: uppercase;
+  color: #fff;
+  box-shadow: 0px 0px 25px 0px #FFFFFF80;
+  display: inline-block;
+  padding: 10px 25px;
+  margin: 0;
+  border-radius: 8px;
+}
+
+.cleanhigh-hero p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.cleanhigh-trial-btn {
+  width: 250px;
+  height: 47px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+   color: #000;
+  background-color: #fff;
+  border: 2px solid #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 30vh;
+}
+
+.cleanhigh-trial-btn:hover {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0px 0px 15px 0px #ffffff80;
+}
+
+
+/* ---------- Subject Section ---------- */
+.cleanhigh-subject {
+  padding: 80px 10%;
+  background-color: #000;
+}
+
+.cleanhigh-subject h2 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 50px;
+  text-align: left;
+}
+
+.cleanhigh-subject-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.cleanhigh-subject-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.cleanhigh-subject-item:nth-child(even) {
+  flex-direction: row-reverse; /* Alternate image on right */
+}
+
+.cleanhigh-subject-item img {
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.cleanhigh-subject-item p {
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-size: 34px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #e0e0e0;
+}
+
+/* ---------- Advantages Section ---------- */
+.cleanhigh-advantages {
+  padding: 80px 10%;
+  background-color: #0a0a0a;
+}
+
+.cleanhigh-advantages h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-size: 64px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: left;
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+
+.cleanhigh-advantage-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.cleanhigh-advantage-box {
+  background-color: #111;
+  border: 1px solid #222;
+  border-radius: 12px;
+  padding: 25px 20px;
+  text-align: left;
+  transition: all 0.3s ease;
+}
+
+.cleanhigh-advantage-box:hover {
+  background-color: #1a1a1a;
+  transform: translateY(-5px);
+}
+
+.cleanhigh-advantage-box h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500; /* Medium weight */
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.cleanhigh-advantage-box p {
+  font-size: 16px;
+  color: #ccc;
+  line-height: 1.6;
+}
+
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
-  .Cleanhigh-main-title {
-    font-size: 24px;
+  .cleanhigh-subject-item,
+  .cleanhigh-subject-item:nth-child(even) {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .Cleanhigh-subtitle {
-    font-size: 14px;
+  .cleanhigh-subject-item img {
+    width: 100%;
+  }
+
+  .cleanhigh-subject-item p {
+    width: 100%;
   }
 }
