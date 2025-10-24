@@ -57,7 +57,7 @@
   line-height: 100%;
   letter-spacing: 0;
   text-align: center;
-   color: #000;
+  color: #000;
   background-color: #fff;
   border: 2px solid #fff;
   border-radius: 8px;
@@ -75,7 +75,7 @@
 
 /* ---------- Subject Section ---------- */
 .cleanhigh-subject {
-  padding: 80px 10%;
+  padding: 80px 6.7%;
   background-color: #000;
 }
 
@@ -100,7 +100,8 @@
 }
 
 .cleanhigh-subject-item:nth-child(even) {
-  flex-direction: row-reverse; /* Alternate image on right */
+  flex-direction: row-reverse;
+  /* Alternate image on right */
 }
 
 .cleanhigh-subject-item img {
@@ -113,7 +114,8 @@
 .cleanhigh-subject-item p {
   width: 40%;
   font-family: "Poppins", sans-serif;
-  font-weight: 500; /* Medium weight */
+  font-weight: 500;
+  /* Medium weight */
   font-style: normal;
   font-size: 34px;
   line-height: 100%;
@@ -123,13 +125,14 @@
 
 /* ---------- Advantages Section ---------- */
 .cleanhigh-advantages {
-  padding: 80px 10%;
+  padding: 80px 6.7%;
   background-color: #0a0a0a;
 }
 
 .cleanhigh-advantages h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: 500; /* Medium weight */
+  font-weight: 500;
+  /* Medium weight */
   font-style: normal;
   font-size: 64px;
   line-height: 100%;
@@ -162,7 +165,8 @@
 
 .cleanhigh-advantage-box h3 {
   font-family: "Poppins", sans-serif;
-  font-weight: 500; /* Medium weight */
+  font-weight: 500;
+  /* Medium weight */
   font-style: normal;
   font-size: 24px;
   line-height: 100%;
@@ -178,7 +182,57 @@
 }
 
 /* ---------- Responsive ---------- */
+/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
+
+  /* Hero Section */
+.cleanhigh-hero {
+  margin: 0;
+  background: url("../assets/cleanhighbgm.png") top center no-repeat;
+  background-size: cover; /* fills the whole section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* centers content vertically */
+  align-items: center; /* centers horizontally */
+  text-align: center;
+  color: #fff;
+}
+
+
+  .cleanhigh-hero h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+
+  .cleanhigh-hero p {
+    font-size: 14px;
+    line-height: 1.4;
+    max-width: 80%;
+  }
+
+  .cleanhigh-trial-btn {
+    margin-top: 20vh;
+    width: 180px;
+    height: 40px;
+    font-size: 15px;
+  }
+
+  /* Subject Section */
+  .cleanhigh-subject {
+    padding: 50px 5%;
+  }
+
+  .cleanhigh-subject h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .cleanhigh-subject-grid {
+    gap: 40px;
+  }
+
   .cleanhigh-subject-item,
   .cleanhigh-subject-item:nth-child(even) {
     flex-direction: column;
@@ -187,9 +241,41 @@
 
   .cleanhigh-subject-item img {
     width: 100%;
+    border-radius: 10px;
   }
 
   .cleanhigh-subject-item p {
     width: 100%;
+    font-size: 20px;
+    margin-top: 15px;
+  }
+
+  /* Advantages Section */
+  .cleanhigh-advantages {
+    padding: 60px 5%;
+  }
+
+  .cleanhigh-advantages h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .cleanhigh-advantage-boxes {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .cleanhigh-advantage-box {
+    text-align: center;
+    padding: 20px 15px;
+  }
+
+  .cleanhigh-advantage-box h3 {
+    font-size: 20px;
+  }
+
+  .cleanhigh-advantage-box p {
+    font-size: 15px;
   }
 }
