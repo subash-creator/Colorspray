@@ -1,19 +1,10 @@
 {
   "files": {
-    "main.css": "./static/css/main.36ceedc3.css",
-    "main.js": "./static/js/main.0d83bf65.js",
+    "main.css": "./static/css/main.de7092ac.css",
+    "main.js": "./static/js/main.40805b27.js",
     "static/js/488.5ab84633.chunk.js": "./static/js/488.5ab84633.chunk.js",
-    "static/media/cleanhighbgm.png": "./static/media/cleanhighbgm.86fb1d2a3b6beb2344d5.png",
-    "static/media/cleanhighimg2.png": "./static/media/cleanhighimg2.dc2686f2b05d27e4b3b7.png",
-    "static/media/cleanhighimg1.png": "./static/media/cleanhighimg1.6f5f2c2feec4f6bdbcf1.png",
-    "static/media/cleanhighimg3.png": "./static/media/cleanhighimg3.ff3fbebf498d0e55101e.png",
-    "static/media/section1bg.webp": "./static/media/section1bg.5a5b5a71f0f12d79d4f6.webp",
-    "static/media/Drone.webp": "./static/media/Drone.d0d4e262490a73191a11.webp",
-    "static/media/cleanhighbg.webp": "./static/media/cleanhighbg.1ad8870fda3f2ef5c86c.webp",
-    "static/media/Drone1.webp": "./static/media/Drone1.a1b79e9e0f76f1e4ec77.webp",
     "static/media/partner1.png": "./static/media/partner1.2238878846442e131fa0.png",
     "static/media/partner2.png": "./static/media/partner2.e45f7d92e2210de0bd30.png",
-    "static/media/Colorown Spray Logo.webp": "./static/media/Colorown Spray Logo.419a7553c514c53cb852.webp",
     "static/media/soaron-logo.webp": "./static/media/soaron-logo.a0d1e761365981e0c91d.webp",
     "static/media/soaron-logob.webp": "./static/media/soaron-logob.b0b279b49177b6f3155f.webp",
     "static/media/ai_smart_icon 1.svg": "./static/media/ai_smart_icon 1.87fab7fd73a7264d04994bc7d0295cfa.svg",
@@ -21,12 +12,12 @@
     "static/media/battle_tested_icon 1.svg": "./static/media/battle_tested_icon 1.235a40e310ad9afd08cad1f91d83a7a1.svg",
     "static/media/safer_icon 1.svg": "./static/media/safer_icon 1.407e70238b1748d2585ac8074b18f8fe.svg",
     "index.html": "./index.html",
-    "main.36ceedc3.css.map": "./static/css/main.36ceedc3.css.map",
-    "main.0d83bf65.js.map": "./static/js/main.0d83bf65.js.map",
+    "main.de7092ac.css.map": "./static/css/main.de7092ac.css.map",
+    "main.40805b27.js.map": "./static/js/main.40805b27.js.map",
     "488.5ab84633.chunk.js.map": "./static/js/488.5ab84633.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.36ceedc3.css",
-    "static/js/main.0d83bf65.js"
+    "static/css/main.de7092ac.css",
+    "static/js/main.40805b27.js"
   ]
 }
