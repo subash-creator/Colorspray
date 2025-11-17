@@ -1,6 +1,4 @@
 .Privacypolicy-container {
-  background: #000;
-  color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -8,51 +6,43 @@
 }
 
 .Privacypolicy-main-content {
+  background: #fff;        /* WHITE BG */
+  color: #000;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.Privacypolicy-main-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
   text-align: center;
-}
-
-/* Floating Rocket Animation */
-.rocket-img {
-  width: 110px;
-  margin-bottom: 14px;
-  animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-.Privacypolicy-main-title {
-  font-size: 32px;
   font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 8px;
 }
 
-.Privacypolicy-subtitle {
+.policy-text {
   font-size: 16px;
-  margin-top: 0;
-  color: #fff;
-  opacity: 0.9;
+  line-height: 1.7;
 }
 
-/* ========== Mobile Responsive ========== */
+.policy-text p {
+  margin-bottom: 12px;
+}
+
+.policy-text strong {
+  font-size: 18px;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .Privacypolicy-main-title {
-    font-size: 24px;
+  .Privacypolicy-main-content h1 {
+    font-size: 28px;
   }
 
-  .Privacypolicy-subtitle {
+  .policy-text {
     font-size: 14px;
   }
 }
