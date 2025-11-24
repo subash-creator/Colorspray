@@ -1,6 +1,4 @@
 .Terms-container {
-  background: #000;
-  color: #fff;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -8,51 +6,71 @@
 }
 
 .Terms-main-content {
+  background: #fff;
+  color: #000;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
 }
 
-/* Floating Rocket Animation */
-.rocket-img {
-  width: 110px;
-  margin-bottom: 14px;
-  animation: float 3s ease-in-out infinite;
+.Terms-main-content h1 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;        /* Medium */
+  font-style: normal;
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-bottom: 20px;
 }
 
-@keyframes float {
-  0%, 100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
+/* H2 */
+.terms-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;        /* Medium */
+  font-style: normal;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-top: 30px;
+  margin-bottom: 12px;
 }
 
-.Terms-main-title {
-  font-size: 32px;
-  font-weight: bold;
-  letter-spacing: 1px;
+/* H3 */
+.terms-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;        /* Bold */
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin-top: 20px;
   margin-bottom: 8px;
 }
 
-.Terms-subtitle {
+/* Paragraphs */
+.terms-text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;        /* Regular */
+  font-style: normal;
   font-size: 16px;
-  margin-top: 0;
-  color: #fff;
-  opacity: 0.9;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin-bottom: 12px;
 }
 
-/* ========== Mobile Responsive ========== */
+/* Strong text */
+.terms-text strong {
+  font-size: 18px;
+}
+
+/* Mobile Responsive */
 @media (max-width: 768px) {
-  .Terms-main-title {
-    font-size: 24px;
+  .Terms-main-content h1 {
+    font-size: 28px;
   }
 
-  .Terms-subtitle {
+  .terms-text {
     font-size: 14px;
   }
 }
