@@ -10,30 +10,57 @@
   color: #000;
   flex: 1;
   padding: 40px 20px;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
 .Privacypolicy-main-content h1 {
-  font-size: 36px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;        /* Medium in CSS = weight 500 */
+  font-style: normal;      /* "Medium" = weight, not style */
+  font-size: 48px;
+  line-height: 100%;
+  letter-spacing: 0;
   margin-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
+  
 }
 
-.policy-text {
+
+
+.policy-text h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;        /* Medium weight */
+  font-style: normal;      /* "Medium" is a weight, not a style */
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0;
+  margin-top: 30px;
+  margin-bottom: 12px;
+}
+.policy-text h3 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;        /* Bold */
+  font-style: normal;      /* "Bold" is a weight, not a style */
   font-size: 16px;
-  line-height: 1.7;
+  line-height: 24px;
+  letter-spacing: 0;
+  margin-top: 20px;
+  margin-bottom: 8px;
 }
-
 .policy-text p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;        /* Regular */
+  font-style: normal;      /* "Regular" = normal */
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
   margin-bottom: 12px;
 }
 
+
 .policy-text strong {
   font-size: 18px;
-  display: block;
-  margin-top: 20px;
+
 }
 
 /* Mobile Responsive */
