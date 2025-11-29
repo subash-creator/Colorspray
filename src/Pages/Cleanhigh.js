@@ -37,7 +37,7 @@ export default function Cleanhigh() {
 
         {/* Subject Section */}
         <section className="cleanhigh-subject">
-          <h2>Subject</h2>
+          <h2>Why Choose Our Clean High Service?</h2>
           <div className="cleanhigh-subject-grid">
             <div className="cleanhigh-subject-item">
               <img src={cleanhighImg1} alt="Building glass" />
